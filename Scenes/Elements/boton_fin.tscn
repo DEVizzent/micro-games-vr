@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dy52c0jdktoae"]
+
+[ext_resource type="Script" path="res://Scenes/Elements/BotonFin.gd" id="1_vdkb7"]
+[ext_resource type="PackedScene" uid="uid://cme66uldrjl2i" path="res://addons/godot-xr-tools/interactables/interactable_area_button.tscn" id="2_waspt"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i7o1e"]
+radius = 0.15
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kd52h"]
+top_radius = 0.1
+bottom_radius = 0.15
+height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3j8s7"]
+albedo_color = Color(1, 0, 0, 1)
+
+[node name="BotonFin" type="Node3D"]
+script = ExtResource("1_vdkb7")
+
+[node name="InteractableAreaButton" parent="." instance=ExtResource("2_waspt")]
+button = NodePath("MeshInstance3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableAreaButton"]
+shape = SubResource("SphereShape3D_i7o1e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractableAreaButton"]
+mesh = SubResource("CylinderMesh_kd52h")
+surface_material_override/0 = SubResource("StandardMaterial3D_3j8s7")
+
+[connection signal="button_pressed" from="InteractableAreaButton" to="." method="_on_interactable_area_button_button_pressed"]

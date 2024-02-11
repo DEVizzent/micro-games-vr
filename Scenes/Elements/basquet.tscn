@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://7i4pqdbhssmn"]
+
+[ext_resource type="PackedScene" uid="uid://ccpf41761nwh4" path="res://Assets/Recycle_Trash_Bin.glb" id="1_btahp"]
+[ext_resource type="Script" path="res://Scenes/Elements/basquet.gd" id="1_xancu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7mwyg"]
+size = Vector3(0.5, 0.3, 0.4)
+
+[node name="Basquet" type="Node3D"]
+script = ExtResource("1_xancu")
+
+[node name="Recycle_Trash_Bin" parent="." instance=ExtResource("1_btahp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.557263, 0, -0.160774)
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00850499, 0.152091, -0.0370831)
+collision_mask = 64
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_7mwyg")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

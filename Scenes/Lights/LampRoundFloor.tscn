@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://rjueuifsatjv"]
+
+[ext_resource type="PackedScene" uid="uid://c70wucfgrheei" path="res://Assets/Fornitures/lampRoundFloor.glb" id="1_8y1ch"]
+
+[node name="Lampara" type="Node3D"]
+
+[node name="lampRoundFloor" parent="." instance=ExtResource("1_8y1ch")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54341, 0)

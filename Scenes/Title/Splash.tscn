@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://u0m22c27kypk"]
+
+[ext_resource type="Script" path="res://Scenes/Title/Splash.gd" id="1_a1yxl"]
+[ext_resource type="Shader" path="res://addons/godot-xr-tools/staging/fade.gdshader" id="2_afo5v"]
+[ext_resource type="PackedScene" path="res://addons/godot-xr-tools/misc/vr_common_shader_cache.tscn" id="2_i7e8q"]
+[ext_resource type="PackedScene" uid="uid://bqumugyvkct4r" path="res://addons/godot-xr-tools/staging/loading_screen.tscn" id="3_e1eyv"]
+[ext_resource type="Texture2D" uid="uid://ddtrfycead87q" path="res://icon.svg" id="4_v7uti"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_h7ike"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_am4pp"]
+custom_aabb = AABB(-5000, -5000, -5000, 10000, 10000, 10000)
+size = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0qo2q"]
+render_priority = 0
+shader = ExtResource("2_afo5v")
+shader_parameter/alpha = 0.0
+
+[node name="SplashScene" type="Node3D"]
+script = ExtResource("1_a1yxl")
+main_scene = "res://Scenes/Games/shoot.tscn"
+
+[node name="Fade" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_am4pp")
+surface_material_override/0 = SubResource("ShaderMaterial_0qo2q")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="VRCommonShaderCache" parent="XROrigin3D/XRCamera3D" instance=ExtResource("2_i7e8q")]
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="LoadingScreen" parent="." instance=ExtResource("3_e1eyv")]
+splash_screen = ExtResource("4_v7uti")
+
+[node name="StartXR" parent="." instance=ExtResource("5_h7ike")]
+
+[node name="Scene" type="Node3D" parent="."]

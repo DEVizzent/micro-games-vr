@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://05thryihktps"]
+
+[ext_resource type="PackedScene" uid="uid://f1ubvjbm3nig" path="res://Assets/Fornitures/lampSquareCeiling.glb" id="1_m87by"]
+
+[node name="Lamp" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08, 1)
+
+[node name="lampSquareCeiling" parent="." instance=ExtResource("1_m87by")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06, 0.07, -0.06)
+light_energy = 2.0
+light_indirect_energy = 2.0
