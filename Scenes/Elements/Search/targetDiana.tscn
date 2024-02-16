@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://75cscgardsng"]
+
+[ext_resource type="PackedScene" uid="uid://bbiioiuqdq3tc" path="res://Assets/Armas/targetSmall.glb" id="1_h023x"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4xsuo"]
+height = 0.05
+radius = 0.16
+
+[node name="Target" type="Area3D"]
+collision_layer = 16384
+collision_mask = 16384
+
+[node name="targetSmall2" parent="." instance=ExtResource("1_h023x")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_4xsuo")

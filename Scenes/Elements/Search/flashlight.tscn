@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtq0plxtxo1vv"]
+
+[ext_resource type="PackedScene" uid="uid://bfx151rpcohlg" path="res://Assets/Flashlight_01.glb" id="1_o56di"]
+[ext_resource type="Script" path="res://flashlight.gd" id="2_ipdio"]
+[ext_resource type="AudioStream" uid="uid://dg8sax45khvg3" path="res://Assets/Search/finding2.wav" id="3_kaor1"]
+
+[node name="flashlight" instance=ExtResource("1_o56di")]
+transform = Transform3D(0.788011, 0, 0.615662, 0, 1, 0, -0.615662, 0, 0.788011, 0, 0, 0)
+script = ExtResource("2_ipdio")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="4"]
+transform = Transform3D(-0.788011, 0, 0.615661, 0, 1, 0, -0.615661, 0, -0.788011, -0.0778232, 0.0262, 0.0881278)
+spot_angle = 20.0
+
+[node name="RayCast3D" type="RayCast3D" parent="." index="5"]
+transform = Transform3D(0.620961, 0.615662, 0.485148, -0.615662, -4.37114e-08, 0.788011, 0.485148, -0.788011, 0.379039, -0.0795137, 0.025, 0.0921897)
+enabled = false
+target_position = Vector3(0, -10, 0)
+collision_mask = 16384
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="Timer" type="Timer" parent="." index="6"]
+wait_time = 0.2
+autostart = true
+
+[node name="Finding" type="AudioStreamPlayer3D" parent="." index="7"]
+stream = ExtResource("3_kaor1")
+bus = &"Effects"

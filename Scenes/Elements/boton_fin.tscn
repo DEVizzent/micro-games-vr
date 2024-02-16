@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cme66uldrjl2i" path="res://addons/godot-xr-tools/interactables/interactable_area_button.tscn" id="2_waspt"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_i7o1e"]
-radius = 0.15
+radius = 0.149513
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kd52h"]
 top_radius = 0.1

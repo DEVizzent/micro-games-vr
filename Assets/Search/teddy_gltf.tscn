@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3 uid="uid://j8u86av1k1dv"]
+
+[ext_resource type="PackedScene" uid="uid://c3y0bw1opt302" path="res://Assets/Search/teddy_GLTF.gltf" id="1_1h11x"]
+[ext_resource type="Texture2D" uid="uid://bbn44oqph2hxe" path="res://Assets/Search/teddy_GLTF_fabric_AO.png" id="2_wqjof"]
+[ext_resource type="Texture2D" uid="uid://31c7d0piiafd" path="res://Assets/Search/teddy_GLTF_fabric_height.png" id="3_tfuf8"]
+[ext_resource type="Texture2D" uid="uid://cjljty5jsfjpm" path="res://Assets/Search/teddy_GLTF_fabric_metallic.png-fabric_roughness.png" id="4_8qvq4"]
+[ext_resource type="PackedScene" uid="uid://mdqqlrkpqbrm" path="res://Assets/Search/CleaverKnifeGltf.gltf" id="5_r6lus"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8drg"]
+albedo_color = Color(0.192157, 0.129412, 0.12549, 1)
+albedo_texture = ExtResource("2_wqjof")
+roughness_texture = ExtResource("4_8qvq4")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_tfuf8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dy6wy"]
+albedo_color = Color(0.972549, 0.776471, 0.552941, 1)
+albedo_texture = ExtResource("2_wqjof")
+roughness_texture = ExtResource("4_8qvq4")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_tfuf8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42acl"]
+albedo_color = Color(0.00392157, 0, 0, 1)
+emission_enabled = true
+emission = Color(0.709804, 0, 0, 1)
+emission_energy_multiplier = 0.2
+
+[node name="teddy_GLTF" instance=ExtResource("1_1h11x")]
+
+[node name="teddy_bear" parent="." index="0"]
+transform = Transform3D(0.0182236, 0.0983255, 0, -0.0983255, 0.0182236, 0, 0, 0, 0.1, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_g8drg")
+surface_material_override/1 = SubResource("StandardMaterial3D_dy6wy")
+surface_material_override/2 = SubResource("StandardMaterial3D_42acl")
+
+[node name="CleaverKnifeGltf" parent="." index="1" instance=ExtResource("5_r6lus")]
+transform = Transform3D(-0.104698, 2.99817, 0, -2.79904, -0.0977444, 1.0751, 1.07445, 0.0375205, 2.80074, 0.0997, -0.0498, -0.412)

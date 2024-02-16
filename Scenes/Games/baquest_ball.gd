@@ -14,6 +14,8 @@ func _process(delta: float) -> void:
 
 func _on_game_completed() -> void:
 	$CompleteMessage.visible = true
+	if !$SuccessAudioStream.is_playing() :
+		$SuccessAudioStream.play()
 	
 	get_tree().create_timer(3.0).timeout.connect(_next_minigame)
 	
