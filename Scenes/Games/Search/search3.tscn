@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://7nwo56o05dna"]
+
+[ext_resource type="PackedScene" uid="uid://cn4tj0p4ncs7j" path="res://Scenes/Games/Search/search.tscn" id="1_ovf6p"]
+[ext_resource type="PackedScene" uid="uid://b1vfxkngd7mct" path="res://Scenes/Elements/Search/targetTedyBear.tscn" id="2_cqm6b"]
+
+[node name="Search" instance=ExtResource("1_ovf6p")]
+next_game = ""
+
+[node name="Target2" parent="." index="6" instance=ExtResource("2_cqm6b")]
+transform = Transform3D(-0.17101, 0, -0.469846, 0, 0.5, 0, 0.469846, 0, -0.17101, 0.87972, 1.25122, -2.7023)

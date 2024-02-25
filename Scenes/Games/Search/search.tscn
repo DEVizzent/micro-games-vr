@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://cn4tj0p4ncs7j"]
 
 [ext_resource type="PackedScene" uid="uid://qbmx03iibuuu" path="res://addons/godot-xr-tools/staging/scene_base.tscn" id="1_fgop6"]
-[ext_resource type="Script" path="res://Scenes/Games/baquest_ball.gd" id="2_ox6hc"]
+[ext_resource type="Script" path="res://Scenes/Games/base_game.gd" id="2_ox6hc"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_8io2v"]
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_lskpm"]
 [ext_resource type="Animation" uid="uid://bv5tuc1kjv0k5" path="res://addons/godot-xr-tools/hands/animations/right/Hold.res" id="5_gb7bn"]
@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="9_mykxd"]
 [ext_resource type="PackedScene" uid="uid://dlylbfpg3dyik" path="res://Assets/Rooms/Library/scene.gltf" id="10_uga25"]
 [ext_resource type="Texture2D" uid="uid://ddtrfycead87q" path="res://icon.svg" id="11_8fdhb"]
-[ext_resource type="PackedScene" uid="uid://b1vfxkngd7mct" path="res://Scenes/Elements/Search/targetTedyBear.tscn" id="12_l3mt5"]
 [ext_resource type="AudioStream" uid="uid://bsaw5lycmt3m4" path="res://Assets/success.ogg" id="13_fmuch"]
+[ext_resource type="AudioStream" uid="uid://dc5wk24h4e75a" path="res://Assets/Commands/search-short-ES.ogg" id="14_bgad0"]
 
 [sub_resource type="Resource" id="Resource_328uv"]
 script = ExtResource("6_hd3k7")
@@ -58,7 +58,7 @@ transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.0
 transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 1.22337, 1.80313, -1.72453)
 visible = false
 mesh = SubResource("QuadMesh_16h83")
-skeleton = NodePath("../Target")
+skeleton = NodePath("")
 
 [node name="floor" type="StaticBody3D" parent="." index="3"]
 
@@ -66,11 +66,11 @@ skeleton = NodePath("../Target")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 shape = SubResource("BoxShape3D_m6a1m")
 
-[node name="Target" parent="." index="4" instance=ExtResource("12_l3mt5")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.562853, 1.22, -2.82769)
-
-[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="." index="5"]
+[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="." index="4"]
 stream = ExtResource("13_fmuch")
 bus = &"Music Effect"
+
+[node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="5"]
+stream = ExtResource("14_bgad0")
 
 [connection signal="game_completed" from="XROrigin3D/RightHand/RightHand/flashlight" to="." method="_on_game_completed"]

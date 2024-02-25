@@ -9,7 +9,6 @@ var raycast: RayCast3D
 var findingSound: AudioStreamPlayer3D
 var light: SpotLight3D
 var counter:int = 0
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	timer = $Timer
 	raycast = $RayCast3D

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b1vfxkngd7mct" path="res://Scenes/Elements/Search/targetTedyBear.tscn" id="2_b65fx"]
 
 [node name="Search" instance=ExtResource("1_licn7")]
-next_game = "res://Scenes/Games/Search/search1.tscn"
+next_game = "res://Scenes/Games/baquest_ball.tscn"
 
 [node name="Target2" parent="." index="6" instance=ExtResource("2_b65fx")]
 transform = Transform3D(-0.422618, 0, 0.906308, 0, 1, 0, -0.906308, 0, -0.422618, 2.52072, 0.753927, 0.3314)

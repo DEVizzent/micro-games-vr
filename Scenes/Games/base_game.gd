@@ -1,16 +1,8 @@
 extends XRToolsSceneBase
 
-@export_file('*.tscn') var next_game : String = ""
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+	if $CommandAudioStream is AudioStreamPlayer:
+		$CommandAudioStream.play()
 
 func _on_game_completed() -> void:
 	$CompleteMessage.visible = true
@@ -21,4 +13,4 @@ func _on_game_completed() -> void:
 	
 func _next_minigame() -> void:
 	var scene_base : XRToolsSceneBase = XRTools.find_xr_ancestor(self, "*", "XRToolsSceneBase")
-	scene_base.load_scene(next_game)
+	scene_base.load_scene(MicroGamesManagerAutoload.getNextGame())

@@ -20,15 +20,34 @@ config/icon="res://icon.svg"
 
 XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
 CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
-SoundManager="*res://addons/sound_manager/sound_manager.gd"
+MicroGamesManagerAutoload="*res://components/MicroGamesManager.gd"
+
+[display]
+
+window/size/viewport_width=1200
+window/size/viewport_height=720
+window/size/initial_position_type=0
+window/size/always_on_top=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg", "res://addons/godotopenxrvendors/plugin.cfg", "res://addons/sound_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/cyclops_level_builder/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg", "res://addons/godotopenxrvendors/plugin.cfg")
 
 [layer_names]
 
+3d_physics/layer_1="Static World"
+3d_physics/layer_2="Dynamic World"
+3d_physics/layer_3="Pickable Objects"
+3d_physics/layer_4="Wall Walking Surface"
+3d_physics/layer_5="Grappling Target"
 3d_physics/layer_15="TargetRaycast"
+3d_physics/layer_17="Held Objects"
+3d_physics/layer_18="Player Hand"
+3d_physics/layer_19="Grab handles"
+3d_physics/layer_20="Player Body"
+3d_physics/layer_21="Pointable "
+3d_physics/layer_22="Hand Pose Area"
+3d_physics/layer_23="UI Objects"
 
 [rendering]
 

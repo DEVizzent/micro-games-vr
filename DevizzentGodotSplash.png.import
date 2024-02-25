@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgob3d11xijlg"
-path.s3tc="res://.godot/imported/Default_1m x 1m.png-fce586d5a5bb2539052b615909997af5.s3tc.ctex"
-path.etc2="res://.godot/imported/Default_1m x 1m.png-fce586d5a5bb2539052b615909997af5.etc2.ctex"
+uid="uid://cbsx7x2p5b6wt"
+path.s3tc="res://.godot/imported/DevizzentGodotSplash.png-62c44a1d2fdfc5a5d355b08a2c26786a.s3tc.ctex"
+path.etc2="res://.godot/imported/DevizzentGodotSplash.png-62c44a1d2fdfc5a5d355b08a2c26786a.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Default_1m x 1m.png"
-dest_files=["res://.godot/imported/Default_1m x 1m.png-fce586d5a5bb2539052b615909997af5.s3tc.ctex", "res://.godot/imported/Default_1m x 1m.png-fce586d5a5bb2539052b615909997af5.etc2.ctex"]
+source_file="res://DevizzentGodotSplash.png"
+dest_files=["res://.godot/imported/DevizzentGodotSplash.png-62c44a1d2fdfc5a5d355b08a2c26786a.s3tc.ctex", "res://.godot/imported/DevizzentGodotSplash.png-62c44a1d2fdfc5a5d355b08a2c26786a.etc2.ctex"]
 
 [params]
 

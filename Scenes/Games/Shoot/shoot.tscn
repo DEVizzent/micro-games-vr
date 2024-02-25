@@ -1,7 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://d2ult2t1mfth8"]
+[gd_scene load_steps=20 format=3 uid="uid://d2ult2t1mfth8"]
 
 [ext_resource type="PackedScene" uid="uid://qbmx03iibuuu" path="res://addons/godot-xr-tools/staging/scene_base.tscn" id="1_ig1in"]
-[ext_resource type="Script" path="res://Scenes/Games/baquest_ball.gd" id="2_ao4hu"]
+[ext_resource type="Script" path="res://Scenes/Games/base_game.gd" id="2_ao4hu"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_24tn1"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_i4eey"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="5_pnjks"]
@@ -13,6 +13,7 @@
 [ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="11_abii0"]
 [ext_resource type="Texture2D" uid="uid://ddtrfycead87q" path="res://icon.svg" id="12_6vsas"]
 [ext_resource type="PackedScene" uid="uid://ca4pkvapulepb" path="res://Scenes/Elements/Shoot/blaster.tscn" id="13_w72mp"]
+[ext_resource type="AudioStream" uid="uid://cbsbnpvdq8sk" path="res://Assets/Commands/shoot-ES.ogg" id="15_4hlky"]
 [ext_resource type="AudioStream" uid="uid://bsaw5lycmt3m4" path="res://Assets/success.ogg" id="15_ut6yi"]
 
 [sub_resource type="Resource" id="Resource_7q75j"]
@@ -123,3 +124,6 @@ bus = &"Music Effect"
 
 [node name="Blaster2" parent="." index="6" instance=ExtResource("13_w72mp")]
 transform = Transform3D(0.00168776, 0.0476868, 0.998861, 0.999374, -0.0353705, 0, 0.0353302, 0.998236, -0.0477167, 1.23899, 1.03885, -0.327313)
+
+[node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="7"]
+stream = ExtResource("15_4hlky")
