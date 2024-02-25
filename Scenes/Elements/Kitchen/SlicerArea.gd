@@ -65,6 +65,7 @@ func cutBody(body: Node3D)-> void:
 	body2.set_collision_mask_value(3,true)
 	body2.set_collision_mask_value(17,true)
 	body2.set_collision_mask_value(18,true)
+	#TODO - Give some feedback to the player
 
 func calculate_center_of_mass(mesh:ArrayMesh):
 	#Not sure how well this work

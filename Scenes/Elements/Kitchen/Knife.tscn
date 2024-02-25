@@ -51,5 +51,9 @@ script = ExtResource("5_rpeht")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SlicerArea" index="0"]
 shape = SubResource("BoxShape3D_kkavc")
 
+[node name="CutCooldown" type="Timer" parent="SlicerArea" index="1"]
+wait_time = 0.1
+one_shot = true
+
 [node name="HighlightRing" parent="." index="6" instance=ExtResource("6_0dvpy")]
 visible = false
