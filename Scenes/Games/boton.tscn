@@ -72,7 +72,7 @@ size = Vector2(2, 2)
 
 [node name="Boton" instance=ExtResource("1_nii0t")]
 script = ExtResource("2_o8lid")
-next_game = "res://Scenes/Games/Shoot/shoot1.tscn"
+next_game = ""
 
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.631936, 0, 0)

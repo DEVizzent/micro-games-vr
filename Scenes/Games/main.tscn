@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://btf05hjpw6k05" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_physics_hand_low.tscn" id="5_txju3"]
 [ext_resource type="PackedScene" uid="uid://qauirntux41p" path="res://Assets/Fornitures/desk.glb" id="6_ntfmr"]
 [ext_resource type="PackedScene" uid="uid://ccpf41761nwh4" path="res://Assets/Recycle_Trash_Bin.glb" id="7_hpb58"]
-[ext_resource type="PackedScene" uid="uid://dgi446l4h8iax" path="res://Scenes/pickable_cube.tscn" id="8_oj7oo"]
+[ext_resource type="PackedScene" uid="uid://dgi446l4h8iax" path="res://Scenes/Elements/Basket/paper_ball.tscn" id="8_oj7oo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o750e"]
 size = Vector3(1.5, 0.05, 0.75)

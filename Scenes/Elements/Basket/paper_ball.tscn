@@ -31,7 +31,7 @@ closed_pose = ExtResource("4_pm0jn")
 script = ExtResource("5_vcrp7")
 closed_pose = ExtResource("7_gxgyy")
 
-[node name="PickableObject" instance=ExtResource("1_aeo4g")]
+[node name="PaperBall" instance=ExtResource("1_aeo4g")]
 
 [node name="CollisionShape3D" parent="." index="0"]
 shape = SubResource("BoxShape3D_lgye5")

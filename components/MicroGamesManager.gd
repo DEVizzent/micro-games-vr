@@ -2,10 +2,12 @@ class_name MicroGamesManager
 extends Node
 
 var easy: Array[String] = [
-	"res://Scenes/Games/baquest_ball.tscn",
-	"res://Scenes/Games/boton.tscn",
-	"res://Scenes/Games/Shoot/shoot1.tscn",
-	"res://Scenes/Games/Search/search1.tscn",
+	"res://Scenes/Games/Basket/basket1.tscn",
+	"res://Scenes/Games/Button/button1.tscn",
+#	"res://Scenes/Games/baquest_ball.tscn",
+#	"res://Scenes/Games/boton.tscn",
+#	"res://Scenes/Games/Shoot/shoot1.tscn",
+#	"res://Scenes/Games/Search/search1.tscn",
 ]
 
 var medium: Array[String] = [
