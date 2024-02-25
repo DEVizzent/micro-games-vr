@@ -25,6 +25,9 @@ var endLessGames: Array[String] = [
 var counter: int = 0
 var game_time: float = 5.0
 
+func getGameTime() -> float:
+	return game_time
+
 func getNextGame() -> String:
 	if easy.size() > 0:
 		var game = easy.pick_random()
