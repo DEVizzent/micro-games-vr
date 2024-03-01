@@ -1,12 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtq0plxtxo1vv"]
+[gd_scene load_steps=6 format=3 uid="uid://dtq0plxtxo1vv"]
 
 [ext_resource type="PackedScene" uid="uid://bfx151rpcohlg" path="res://Assets/Flashlight_01.glb" id="1_o56di"]
 [ext_resource type="Script" path="res://flashlight.gd" id="2_ipdio"]
 [ext_resource type="AudioStream" uid="uid://dg8sax45khvg3" path="res://Assets/Search/finding2.wav" id="3_kaor1"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ei8r3"]
+resource_name = "Flashlight"
+cull_mode = 2
+albedo_color = Color(0.139985, 0.139985, 0.139985, 1)
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lan8d"]
+resource_name = "Flashlight body"
+cull_mode = 2
+albedo_color = Color(0.270588, 0.270588, 0.270588, 1)
+metallic = 1.0
+
 [node name="flashlight" instance=ExtResource("1_o56di")]
 transform = Transform3D(0.788011, 0, 0.615662, 0, 1, 0, -0.615662, 0, 0.788011, 0, 0, 0)
 script = ExtResource("2_ipdio")
+
+[node name="Flashlight body" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ei8r3")
+surface_material_override/1 = SubResource("StandardMaterial3D_lan8d")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." index="4"]
 transform = Transform3D(-0.788011, 0, 0.615661, 0, 1, 0, -0.615661, 0, -0.788011, -0.0778232, 0.0262, 0.0881278)

@@ -73,7 +73,6 @@ size = Vector2(2, 2)
 
 [node name="Kitchen" instance=ExtResource("1_cl178")]
 script = ExtResource("2_6dyuk")
-next_game = ""
 
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.861336, 0, 0)

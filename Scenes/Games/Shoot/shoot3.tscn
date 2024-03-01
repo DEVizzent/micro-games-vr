@@ -1,27 +1,26 @@
 [gd_scene load_steps=3 format=3 uid="uid://enocnmv2na46"]
 
-[ext_resource type="PackedScene" uid="uid://d2ult2t1mfth8" path="res://Scenes/Games/Shoot/shoot.tscn" id="1_vxtei"]
+[ext_resource type="PackedScene" uid="uid://nl6ravgt2db2" path="res://Scenes/Games/Shoot/base_shoot.tscn" id="1_gb1f7"]
 [ext_resource type="PackedScene" uid="uid://yqgn73ucy4ti" path="res://Scenes/Elements/Shoot/target.tscn" id="2_3kerq"]
 
-[node name="Shoot" instance=ExtResource("1_vxtei")]
-next_game = "res://Scenes/Games/Shoot/shoot1.tscn"
+[node name="Shoot3" instance=ExtResource("1_gb1f7")]
 
-[node name="Target" parent="." index="6" instance=ExtResource("2_3kerq")]
+[node name="Target" parent="." index="8" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0)
 
-[node name="Target2" parent="." index="7" instance=ExtResource("2_3kerq")]
+[node name="Target2" parent="." index="9" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0.867851)
 
-[node name="Target3" parent="." index="8" instance=ExtResource("2_3kerq")]
+[node name="Target3" parent="." index="10" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, -0.949555)
 
-[node name="Target4" parent="." index="10" instance=ExtResource("2_3kerq")]
+[node name="Target4" parent="." index="11" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 2.3068, 0)
 
-[node name="Target5" parent="." index="11" instance=ExtResource("2_3kerq")]
+[node name="Target5" parent="." index="12" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 2.3068, 0.867851)
 
-[node name="Target6" parent="." index="12" instance=ExtResource("2_3kerq")]
+[node name="Target6" parent="." index="13" instance=ExtResource("2_3kerq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 2.3068, -0.949555)
 
 [connection signal="game_completed" from="Target" to="." method="_on_game_completed"]

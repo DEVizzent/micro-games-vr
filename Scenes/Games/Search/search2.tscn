@@ -1,10 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cp28e4nowl7pp"]
 
-[ext_resource type="PackedScene" uid="uid://cn4tj0p4ncs7j" path="res://Scenes/Games/Search/search.tscn" id="1_q86y3"]
+[ext_resource type="PackedScene" uid="uid://cjfleymqqbc14" path="res://Scenes/Games/Search/base_search.tscn" id="1_cxp40"]
 [ext_resource type="PackedScene" uid="uid://b1vfxkngd7mct" path="res://Scenes/Elements/Search/targetTedyBear.tscn" id="2_efhn4"]
 
-[node name="Search" instance=ExtResource("1_q86y3")]
-next_game = ""
+[node name="Search2" instance=ExtResource("1_cxp40")]
 
-[node name="Target2" parent="." index="6" instance=ExtResource("2_efhn4")]
+[node name="Target" parent="." index="7" instance=ExtResource("2_efhn4")]
 transform = Transform3D(-0.391435, 0, -0.580326, 0, 0.7, 0, 0.580326, 0, -0.391435, 3.89722, 0.232419, -3.5096)

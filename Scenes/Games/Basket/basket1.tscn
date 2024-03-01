@@ -31,7 +31,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 0, 1)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[node name="Basket" instance=ExtResource("1_8q7od")]
+[node name="Basket1" instance=ExtResource("1_8q7od")]
 
 [node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)

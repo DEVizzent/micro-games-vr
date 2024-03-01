@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfqlmw85iklct"]
+
+[ext_resource type="Script" path="res://Scenes/Menus/Start/start_menu.gd" id="1_nc1c2"]
+
+[node name="CenterContainer" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_nc1c2")
+
+[node name="Main" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="Main"]
+layout_mode = 2
+text = "Start"
+
+[node name="Options" type="Button" parent="Main"]
+layout_mode = 2
+text = "Options"
+
+[node name="Exit" type="Button" parent="Main"]
+layout_mode = 2
+text = "Exit"
+
+[node name="Volume" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Cancel" type="Button" parent="Volume"]
+layout_mode = 2
+text = "Cancelar"
+
+[node name="Exit" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Exit"]
+layout_mode = 2
+text = "Seguro que quieres salir?"
+
+[node name="Exit" type="Button" parent="Exit"]
+layout_mode = 2
+text = "Salir"
+
+[node name="Cancel" type="Button" parent="Exit"]
+layout_mode = 2
+text = "Cancelar"
+
+[connection signal="pressed" from="Main/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Main/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Main/Exit" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="Volume/Cancel" to="." method="_on_cancel_pressed"]
+[connection signal="pressed" from="Exit/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Exit/Cancel" to="." method="_on_cancel_pressed"]
