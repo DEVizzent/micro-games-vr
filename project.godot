@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
 CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
 MicroGamesManagerAutoload="*res://components/MicroGamesManager.gd"
+FirebaseAnalytics="*res://addons/FirebaseAnalyticsGodotPlugin/plugin.gd"
 
 [display]
 
@@ -31,7 +32,7 @@ window/size/always_on_top=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/cyclops_level_builder/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg", "res://addons/godotopenxrvendors/plugin.cfg")
+enabled=PackedStringArray("res://addons/FirebaseAnalyticsGodotPlugin/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/cyclops_level_builder/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg", "res://addons/godotopenxrvendors/plugin.cfg")
 
 [layer_names]
 
