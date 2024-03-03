@@ -1,28 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://cjfleymqqbc14"]
+[gd_scene load_steps=5 format=3 uid="uid://cjfleymqqbc14"]
 
 [ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_xwlcu"]
-[ext_resource type="Animation" uid="uid://bv5tuc1kjv0k5" path="res://addons/godot-xr-tools/hands/animations/right/Hold.res" id="2_w01cq"]
-[ext_resource type="Script" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="3_5gqn8"]
 [ext_resource type="PackedScene" uid="uid://dtq0plxtxo1vv" path="res://Scenes/Elements/Search/flashlight.tscn" id="4_vvodl"]
 [ext_resource type="AudioStream" uid="uid://bet7qu2wmni0r" path="res://Assets/Commands/search-ES.ogg" id="5_2g612"]
 [ext_resource type="PackedScene" uid="uid://dlylbfpg3dyik" path="res://Assets/Rooms/Library/scene.gltf" id="5_nraf7"]
 
-[sub_resource type="Resource" id="Resource_6ith6"]
-script = ExtResource("3_5gqn8")
-open_pose = ExtResource("2_w01cq")
-closed_pose = ExtResource("2_w01cq")
-
 [node name="BaseGameScene" instance=ExtResource("1_xwlcu")]
+game_time_modifier = 0.0
 
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.515638, 0, 0)
 
-[node name="RightPhysicsHand" parent="XROrigin3D/RightHand" index="0"]
-transform = Transform3D(1, 0, 0, 0, 0.979077, 0.203488, 0, -0.203488, 0.979077, 0, 0, 0)
-default_pose = SubResource("Resource_6ith6")
-
-[node name="flashlight" parent="XROrigin3D/RightHand/RightPhysicsHand" index="2" instance=ExtResource("4_vvodl")]
-transform = Transform3D(0.788011, -2.57415e-08, 0.615662, -0.422303, -0.727666, 0.540523, 0.447996, -0.685933, -0.573408, 0.00928903, -0.0144082, 0.115054)
+[node name="flashlight" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_vvodl")]
+transform = Transform3D(-0.77147, 0, -0.636267, 0, 1, 0, 0.636267, 0, -0.77147, 0, 0, 0)
 
 [node name="DirectionalLight3D" parent="." index="2"]
 visible = false
@@ -30,7 +20,5 @@ visible = false
 [node name="CommandAudioStream" parent="." index="4"]
 stream = ExtResource("5_2g612")
 
-[node name="Sketchfab_Scene" parent="." index="6" instance=ExtResource("5_nraf7")]
+[node name="Sketchfab_Scene" parent="." index="5" instance=ExtResource("5_nraf7")]
 transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 4.46, 0, -3.99)
-
-[connection signal="game_completed" from="XROrigin3D/RightHand/RightPhysicsHand/flashlight" to="." method="_on_game_completed"]

@@ -5,5 +5,8 @@
 
 [node name="Search2" instance=ExtResource("1_cxp40")]
 
+[node name="PlayerBody" parent="XROrigin3D" index="3"]
+collision_mask = 1023
+
 [node name="Target" parent="." index="7" instance=ExtResource("2_efhn4")]
 transform = Transform3D(-0.391435, 0, -0.580326, 0, 0.7, 0, 0.580326, 0, -0.391435, 3.89722, 0.232419, -3.5096)

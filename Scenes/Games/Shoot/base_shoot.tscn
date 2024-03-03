@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://nl6ravgt2db2"]
+[gd_scene load_steps=11 format=3 uid="uid://nl6ravgt2db2"]
 
 [ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_0hrtb"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="2_ackdg"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_rrttp"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="3_4k0mk"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_fuijv"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_p8s5t"]
 [ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="4_wefby"]
 [ext_resource type="PackedScene" uid="uid://ca4pkvapulepb" path="res://Scenes/Elements/Shoot/blaster.tscn" id="5_04sya"]
 [ext_resource type="AudioStream" uid="uid://cbsbnpvdq8sk" path="res://Assets/Commands/shoot-ES.ogg" id="5_fuanr"]
@@ -32,9 +35,18 @@ active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [node name="BaseGameScene3" instance=ExtResource("1_0hrtb")]
+game_time_modifier = 0.0
 
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.684628, 0, 0)
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_rrttp")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" index="1" instance=ExtResource("3_fuijv")]
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_p8s5t")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("3_fuijv")]
 
 [node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)

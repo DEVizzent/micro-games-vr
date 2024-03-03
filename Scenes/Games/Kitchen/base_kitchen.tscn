@@ -1,11 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://ts40aaqdkwb2"]
+[gd_scene load_steps=12 format=3 uid="uid://ts40aaqdkwb2"]
 
 [ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_iebfo"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_bhdrx"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="2_bp6d6"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="3_8bquq"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_ruvno"]
 [ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="4_ct0kk"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_mjyff"]
 [ext_resource type="Script" path="res://Scenes/Games/Kitchen/CookingElements.gd" id="5_5a158"]
 [ext_resource type="PackedScene" uid="uid://b7dpyahkl34v0" path="res://Scenes/Elements/Kitchen/Knife.tscn" id="6_317a3"]
+[ext_resource type="AudioStream" uid="uid://b6k7pku17gq7f" path="res://Assets/Commands/kitchen-ES.ogg" id="8_iipdc"]
 
 [sub_resource type="Resource" id="Resource_ivcci"]
 script = ExtResource("3_8bquq")
@@ -36,16 +40,25 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.681229, 0, 0)
 
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_bhdrx")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" index="1" instance=ExtResource("3_ruvno")]
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_mjyff")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("3_ruvno")]
+
 [node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)
 script = ExtResource("2_bp6d6")
 block_data = SubResource("Resource_ivcci")
 materials = Array[Material]([ExtResource("4_ct0kk")])
 
+[node name="CommandAudioStream" parent="." index="4"]
+stream = ExtResource("8_iipdc")
+
 [node name="Knife" parent="." index="6" instance=ExtResource("6_317a3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2486, 1.00099, 0.2985)
 
 [node name="CookingElements" type="Node3D" parent="." index="7" groups=["CookingElementsNode"]]
 script = ExtResource("5_5a158")
-
-[connection signal="game_completed" from="CookingElements" to="." method="_on_game_completed"]

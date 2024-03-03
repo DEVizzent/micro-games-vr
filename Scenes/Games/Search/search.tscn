@@ -31,7 +31,7 @@ size = Vector3(10, 0.2, 10)
 
 [node name="Search" instance=ExtResource("1_fgop6")]
 script = ExtResource("2_ox6hc")
-next_game = "res://Scenes/Games/boton.tscn"
+game_time_modifier = 0.0
 
 [node name="XROrigin3D" parent="." index="0"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.388014, 0, 0)
@@ -72,5 +72,3 @@ bus = &"Music Effect"
 
 [node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="5"]
 stream = ExtResource("14_bgad0")
-
-[connection signal="game_completed" from="XROrigin3D/RightHand/RightHand/flashlight" to="." method="_on_game_completed"]

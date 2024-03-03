@@ -1,7 +1,5 @@
 extends Node3D
 
-signal game_completed
-
 const SUCCESS_COUNTER: int = 6
 
 var timer: Timer
@@ -27,7 +25,7 @@ func check_raycast() -> void:
 	if (counter == 1) :
 		findingSound.play(0.0)
 	if counter >= SUCCESS_COUNTER :
-		emit_signal("game_completed")
+		EventBus.emit_signal(EventBus.GAME_COMPLETED_EVENT)
 		_bigFlash()
 		timer.stop()
 		

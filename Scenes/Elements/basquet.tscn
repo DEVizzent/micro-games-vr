@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/Elements/basquet.gd" id="1_xancu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7mwyg"]
-size = Vector3(0.5, 0.3, 0.4)
+size = Vector3(0.442627, 0.3, 0.35415)
 
 [node name="Basquet" type="Node3D"]
 script = ExtResource("1_xancu")
@@ -17,6 +17,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00850499, 0.152091, -0.0370
 collision_mask = 64
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0235596, 0, -0.000805676)
 shape = SubResource("BoxShape3D_7mwyg")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

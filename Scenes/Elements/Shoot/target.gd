@@ -1,7 +1,5 @@
 extends Area3D
 
-signal game_completed
-
 var isHit:bool
 
 func _ready() -> void:
@@ -20,4 +18,4 @@ func hit() -> void:
 
 func check_completed() -> void:
 	if get_tree().get_nodes_in_group("target").size() <= 1 :
-		emit_signal("game_completed")
+		EventBus.emit_signal(EventBus.GAME_COMPLETED_EVENT)

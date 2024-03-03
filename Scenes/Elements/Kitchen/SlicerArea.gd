@@ -2,8 +2,6 @@ extends Area3D
 
 # TODO: Grabar y anyadir command al minijuego de cocina
 
-signal element_cutted()
-
 @onready var slicer = $"../Slicer"
 @onready var cooldown: Timer = $CutCooldown
 var cross_section_material = preload("res://Scenes/Elements/Kitchen/CarrotOrangeMaterial.tres")
@@ -70,7 +68,8 @@ func cutBody(body: Node3D)-> void:
 	body2.set_collision_mask_value(17,true)
 	body2.set_collision_mask_value(18,true)
 	body2.add_to_group("cutted_" + body.name)
-	emit_signal("element_cutted")
+	push_warning("Sent element cutted signal")
+	EventBus.emit_signal("element_cutted")
 	#TODO - Give some feedback to the player
 
 func calculate_center_of_mass(mesh:ArrayMesh):

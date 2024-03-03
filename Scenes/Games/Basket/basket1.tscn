@@ -1,8 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctyj100iuwwic"]
+[gd_scene load_steps=11 format=3 uid="uid://ctyj100iuwwic"]
 
 [ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_8q7od"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="2_2t1gy"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_qco7j"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="3_23lrc"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_ewm46"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_ciajx"]
 [ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="4_lh5pb"]
 [ext_resource type="PackedScene" uid="uid://dgi446l4h8iax" path="res://Scenes/Elements/Basket/paper_ball.tscn" id="5_w40xr"]
 [ext_resource type="PackedScene" uid="uid://7i4pqdbhssmn" path="res://Scenes/Elements/basquet.tscn" id="6_61o2g"]
@@ -33,6 +36,14 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [node name="Basket1" instance=ExtResource("1_8q7od")]
 
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_qco7j")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" index="1" instance=ExtResource("3_ewm46")]
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_ciajx")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("3_ewm46")]
+
 [node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)
 script = ExtResource("2_2t1gy")
@@ -53,5 +64,3 @@ collision_layer = 68
 
 [node name="Basquet" parent="." index="9" instance=ExtResource("6_61o2g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.593675, 0, -1.66362)
-
-[connection signal="game_completed" from="Basquet" to="." method="_on_game_completed"]

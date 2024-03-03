@@ -1,4 +1,4 @@
-class_name MicroGamesManager
+class_name MicroGamesManagerScript
 extends Node
 
 var easy: Array[String] = [
@@ -11,6 +11,7 @@ var easy: Array[String] = [
 
 var medium: Array[String] = [
 	"res://Scenes/Games/Kitchen/kitchen2.tscn",
+	"res://Scenes/Games/Basket/basket2.tscn",
 	"res://Scenes/Games/Shoot/shoot2.tscn",
 	"res://Scenes/Games/Search/search2.tscn",
 ]
@@ -18,10 +19,13 @@ var medium: Array[String] = [
 var hard: Array[String] = [
 	"res://Scenes/Games/Shoot/shoot3.tscn",
 	"res://Scenes/Games/Search/search3.tscn",
+	"res://Scenes/Games/Basket/basket3.tscn",
 ]
 
 var endLessGames: Array[String] = [
-	"res://Scenes/Games/Shoot/shoot3.tscn"
+	"res://Scenes/Games/Shoot/shoot3.tscn",
+	"res://Scenes/Games/Basket/basket3.tscn",
+	"res://Scenes/Games/Kitchen/kitchen2.tscn",
 ]
 
 var counter: int = 0

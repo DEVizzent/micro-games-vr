@@ -31,4 +31,4 @@ func _on_options_pressed() -> void:
 func _on_start_pressed() -> void:
 	print_debug("Start Pressed")
 	var scene_base : XRToolsSceneBase = XRTools.find_xr_ancestor(self, "*", "XRToolsSceneBase")
-	scene_base.load_scene(MicroGamesManagerAutoload.getNextGame())
+	scene_base.load_scene(MicroGamesManager.getNextGame())

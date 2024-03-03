@@ -17,15 +17,15 @@ layout_mode = 2
 
 [node name="Start" type="Button" parent="Main"]
 layout_mode = 2
-text = "Start"
+text = "Empezar"
 
 [node name="Options" type="Button" parent="Main"]
 layout_mode = 2
-text = "Options"
+text = "Opciones"
 
 [node name="Exit" type="Button" parent="Main"]
 layout_mode = 2
-text = "Exit"
+text = "Salir"
 
 [node name="Volume" type="VBoxContainer" parent="."]
 visible = false
