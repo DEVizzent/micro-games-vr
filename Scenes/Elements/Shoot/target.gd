@@ -17,5 +17,5 @@ func hit() -> void:
 	tween.tween_callback(queue_free)
 
 func check_completed() -> void:
-	if get_tree().get_nodes_in_group("target").size() <= 1 :
+	if get_tree().get_nodes_in_group("target").size() < 1 :
 		EventBus.emit_signal(EventBus.GAME_COMPLETED_EVENT)
