@@ -120,5 +120,3 @@ bus = &"Music Effect"
 
 [node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="6"]
 stream = ExtResource("14_sjryy")
-
-[connection signal="game_completed" from="BotonFin" to="." method="_on_game_completed"]

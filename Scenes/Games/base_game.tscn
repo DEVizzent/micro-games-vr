@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://5fhngxue8rtd"]
+[gd_scene load_steps=18 format=3 uid="uid://5fhngxue8rtd"]
 
 [ext_resource type="PackedScene" uid="uid://qbmx03iibuuu" path="res://addons/godot-xr-tools/staging/scene_base.tscn" id="1_cp4rv"]
 [ext_resource type="Script" path="res://Scenes/Games/base_game.gd" id="2_n3nlx"]
@@ -8,10 +8,21 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="9_7a3gw"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="10_ulrwb"]
 [ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="11_0gm8m"]
+[ext_resource type="Sky" uid="uid://c5p0buy60dsgl" path="res://Assets/new_sky.tres" id="13_f0c26"]
 [ext_resource type="Texture2D" uid="uid://ddtrfycead87q" path="res://icon.svg" id="13_ooa31"]
 [ext_resource type="AudioStream" uid="uid://bsaw5lycmt3m4" path="res://Assets/success.ogg" id="15_7trm7"]
 [ext_resource type="AudioStream" uid="uid://b1f3sm72man68" path="res://Assets/failure.ogg" id="15_8a2de"]
 [ext_resource type="AudioStream" uid="uid://c24ltg42sd6ir" path="res://Assets/Commands/basket-ES.ogg" id="16_424wy"]
+
+[sub_resource type="Environment" id="Environment_lmosf"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = ExtResource("13_f0c26")
+ambient_light_source = 3
+ambient_light_color = Color(0.988235, 0.996078, 0.866667, 1)
+ambient_light_sky_contribution = 0.8
+ambient_light_energy = 2.0
+reflected_light_source = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cnxf1"]
 albedo_texture = ExtResource("13_ooa31")
@@ -48,7 +59,10 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 script = ExtResource("2_n3nlx")
 game_time_modifier = 0.0
 
-[node name="XROrigin3D" parent="." index="0"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+environment = SubResource("Environment_lmosf")
+
+[node name="XROrigin3D" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.515638, 0, 0)
 
 [node name="CompleteMessage" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D" index="0"]
@@ -64,7 +78,7 @@ enabled = false
 [node name="PlayerBody" parent="XROrigin3D" index="3" instance=ExtResource("7_v3n3h")]
 collision_mask = 1
 
-[node name="CyclopsBlocks" type="Node3D" parent="." index="1"]
+[node name="CyclopsBlocks" type="Node3D" parent="." index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 script = ExtResource("8_wi47p")
 
@@ -75,15 +89,15 @@ block_data = SubResource("Resource_7q75j")
 materials = Array[Material]([ExtResource("11_0gm8m")])
 metadata/_edit_lock_ = true
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="2"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 0.670453, 0.741952, 0, -0.741952, 0.670453, 0, 0, 0)
 
-[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="." index="3"]
+[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="." index="4"]
 stream = ExtResource("15_7trm7")
 bus = &"Music Effect"
 
-[node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="4"]
+[node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="5"]
 stream = ExtResource("16_424wy")
 
-[node name="FailAudioStream" type="AudioStreamPlayer" parent="." index="5"]
+[node name="FailAudioStream" type="AudioStreamPlayer" parent="." index="6"]
 stream = ExtResource("15_8a2de")

@@ -1,24 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://cjfleymqqbc14"]
+[gd_scene load_steps=6 format=3 uid="uid://cjfleymqqbc14"]
 
 [ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_xwlcu"]
+[ext_resource type="Environment" uid="uid://cbi7sxblpq4s4" path="res://Assets/dark_sky.tres" id="2_bimie"]
 [ext_resource type="PackedScene" uid="uid://dtq0plxtxo1vv" path="res://Scenes/Elements/Search/flashlight.tscn" id="4_vvodl"]
 [ext_resource type="AudioStream" uid="uid://bet7qu2wmni0r" path="res://Assets/Commands/search-ES.ogg" id="5_2g612"]
 [ext_resource type="PackedScene" uid="uid://dlylbfpg3dyik" path="res://Assets/Rooms/Library/scene.gltf" id="5_nraf7"]
 
 [node name="BaseGameScene" instance=ExtResource("1_xwlcu")]
-game_time_modifier = 0.0
 
-[node name="XROrigin3D" parent="." index="0"]
+[node name="WorldEnvironment" parent="." index="0"]
+environment = ExtResource("2_bimie")
+
+[node name="XROrigin3D" parent="." index="1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.515638, 0, 0)
 
 [node name="flashlight" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_vvodl")]
 transform = Transform3D(-0.77147, 0, -0.636267, 0, 1, 0, 0.636267, 0, -0.77147, 0, 0, 0)
 
-[node name="DirectionalLight3D" parent="." index="2"]
+[node name="DirectionalLight3D" parent="." index="3"]
 visible = false
-
-[node name="CommandAudioStream" parent="." index="4"]
-stream = ExtResource("5_2g612")
 
 [node name="Sketchfab_Scene" parent="." index="5" instance=ExtResource("5_nraf7")]
 transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 4.46, 0, -3.99)
+
+[node name="CommandAudioStream" parent="." index="6"]
+stream = ExtResource("5_2g612")

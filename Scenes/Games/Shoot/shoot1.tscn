@@ -7,5 +7,3 @@
 
 [node name="Target" parent="." index="8" instance=ExtResource("2_a60w1")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0)
-
-[connection signal="game_completed" from="Target" to="." method="_on_game_completed"]

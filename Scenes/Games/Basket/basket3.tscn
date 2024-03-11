@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_ubmec"]
 [ext_resource type="PackedScene" uid="uid://btf05hjpw6k05" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_physics_hand_low.tscn" id="4_6vdaj"]
 
-[node name="Basket1" instance=ExtResource("1_wnsei")]
+[node name="Basket3" instance=ExtResource("1_wnsei")]
 
 [node name="LeftPhysicsHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_4c63b")]
 

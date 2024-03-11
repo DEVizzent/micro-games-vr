@@ -13,7 +13,3 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.0393
 
 [node name="Target3" parent="." index="10" instance=ExtResource("2_c0vvm")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, -0.949555)
-
-[connection signal="game_completed" from="Target" to="." method="_on_game_completed"]
-[connection signal="game_completed" from="Target2" to="." method="_on_game_completed"]
-[connection signal="game_completed" from="Target3" to="." method="_on_game_completed"]

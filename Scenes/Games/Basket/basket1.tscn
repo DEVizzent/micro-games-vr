@@ -35,6 +35,7 @@ active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [node name="Basket1" instance=ExtResource("1_8q7od")]
+game_time_modifier = 2.0
 
 [node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_qco7j")]
 

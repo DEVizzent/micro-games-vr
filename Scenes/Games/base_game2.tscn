@@ -1,0 +1,92 @@
+[gd_scene load_steps=19 format=3 uid="uid://c86y1fmmxo7do"]
+
+[ext_resource type="PackedScene" uid="uid://qbmx03iibuuu" path="res://addons/godot-xr-tools/staging/scene_base.tscn" id="1_m0e64"]
+[ext_resource type="Script" path="res://Scenes/Games/base_game.gd" id="2_mln6k"]
+[ext_resource type="Texture2D" uid="uid://ddtrfycead87q" path="res://icon.svg" id="3_psvdj"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="4_fbnob"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="5_pmej3"]
+[ext_resource type="Texture2D" uid="uid://dpyend2ro20py" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Color.jpg" id="9_j88nk"]
+[ext_resource type="AudioStream" uid="uid://bsaw5lycmt3m4" path="res://Assets/success.ogg" id="10_fepc1"]
+[ext_resource type="Texture2D" uid="uid://bdfapqva83tkp" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_NormalGL.jpg" id="10_rrv7t"]
+[ext_resource type="Texture2D" uid="uid://vtkgaleg6oh6" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Roughness.jpg" id="11_g5wxa"]
+[ext_resource type="AudioStream" uid="uid://c24ltg42sd6ir" path="res://Assets/Commands/basket-ES.ogg" id="11_oe8gw"]
+[ext_resource type="Sky" uid="uid://c5p0buy60dsgl" path="res://Assets/new_sky.tres" id="12_gdaog"]
+[ext_resource type="AudioStream" uid="uid://b1f3sm72man68" path="res://Assets/failure.ogg" id="12_kd1t2"]
+
+[sub_resource type="Environment" id="Environment_rwytk"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = ExtResource("12_gdaog")
+ambient_light_source = 3
+ambient_light_color = Color(0.988235, 0.996078, 0.866667, 1)
+ambient_light_sky_contribution = 0.8
+ambient_light_energy = 5.0
+reflected_light_source = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cnxf1"]
+albedo_texture = ExtResource("3_psvdj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_o4fpj"]
+material = SubResource("StandardMaterial3D_cnxf1")
+size = Vector2(2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5wh7x"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="QuadMesh" id="QuadMesh_uqqt3"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5bswq"]
+albedo_texture = ExtResource("9_j88nk")
+roughness_texture = ExtResource("11_g5wxa")
+normal_enabled = true
+normal_texture = ExtResource("10_rrv7t")
+uv1_triplanar = true
+
+[node name="BaseGameScene2" instance=ExtResource("1_m0e64")]
+script = ExtResource("2_mln6k")
+game_time_modifier = 5.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+environment = SubResource("Environment_rwytk")
+
+[node name="XROrigin3D" parent="." index="1"]
+transform = Transform3D(0.0173128, 0, -0.99985, 0, 1, 0, 0.99985, 0, 0.0173128, 0, 0, 0)
+
+[node name="CompleteMessage" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D" index="0"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.515638, -0.21687, -1.32355)
+visible = false
+mesh = SubResource("QuadMesh_o4fpj")
+skeleton = NodePath("../../..")
+
+[node name="MovementTurn" parent="XROrigin3D/RightHand" index="0" instance=ExtResource("4_fbnob")]
+enabled = false
+
+[node name="PlayerBody" parent="XROrigin3D" index="3" instance=ExtResource("5_pmej3")]
+collision_mask = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="2"]
+transform = Transform3D(0.954225, 0.221911, -0.200526, 0, 0.670453, 0.741952, 0.299091, -0.707989, 0.639763, 0, 0, 0)
+
+[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource("10_fepc1")
+bus = &"Music Effect"
+
+[node name="CommandAudioStream" type="AudioStreamPlayer" parent="." index="4"]
+stream = ExtResource("11_oe8gw")
+
+[node name="FailAudioStream" type="AudioStreamPlayer" parent="." index="5"]
+stream = ExtResource("12_kd1t2")
+
+[node name="Floor" type="StaticBody3D" parent="." index="6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_5wh7x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" index="1"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("QuadMesh_uqqt3")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5bswq")

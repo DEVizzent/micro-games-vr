@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpgtyf8qq8m4k"]
+
+[ext_resource type="PackedScene" uid="uid://bcxelwbgqcq1v" path="res://Scenes/Games/Spiderman/spiderman.tscn" id="1_gf73h"]
+
+[node name="Spiderman3" instance=ExtResource("1_gf73h")]
+
+[node name="DirectionalLight3D" parent="." index="1"]
+transform = Transform3D(0.954225, 0.221911, -0.200526, 0, 0.670453, 0.741952, 0.299091, -0.707989, 0.639763, 0, 0, 0)
+
+[node name="MeshInstance3D" parent="Floor" index="1"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Piscina" parent="." index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2406, -0.8905, 2.067)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy26dwcxc0s6k"]
+
+[ext_resource type="PackedScene" uid="uid://bcxelwbgqcq1v" path="res://Scenes/Games/Spiderman/spiderman.tscn" id="1_rxsux"]
+[ext_resource type="Sky" uid="uid://c5p0buy60dsgl" path="res://Assets/new_sky.tres" id="2_xfm23"]
+
+[sub_resource type="Environment" id="Environment_51qnj"]
+background_mode = 2
+background_energy_multiplier = 2.0
+sky = ExtResource("2_xfm23")
+ambient_light_source = 3
+ambient_light_color = Color(0.988235, 0.996078, 0.866667, 1)
+ambient_light_sky_contribution = 0.8
+ambient_light_energy = 5.0
+reflected_light_source = 2
+
+[node name="Spiderman1" instance=ExtResource("1_rxsux")]
+
+[node name="WorldEnvironment" parent="." index="0"]
+environment = SubResource("Environment_51qnj")
