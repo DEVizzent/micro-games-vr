@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpwqwwuhvyw2k"]
+
+[ext_resource type="Script" path="res://Scenes/Elements/Birthday/blower.gd" id="1_xaugj"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jmyaq"]
+height = 1.2
+radius = 0.1
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_a8lh0"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_o7cus"]
+height = 1.5
+radius = 0.2
+
+[node name="Blower" type="Area3D"]
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_xaugj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_jmyaq")
+
+[node name="AudioBlower" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamMicrophone_a8lh0")
+autoplay = true
+bus = &"Record"
+
+[node name="Danger" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Danger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.130038, 0)
+shape = SubResource("CylinderShape3D_o7cus")

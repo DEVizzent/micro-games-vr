@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://c8dc7f2r61xgl"]
+
+[ext_resource type="PackedScene" uid="uid://dfsfilp7x0v3l" path="res://Assets/Birthday/cakeBirthday.glb" id="1_psty0"]
+[ext_resource type="Material" uid="uid://htlxjlur4iib" path="res://Assets/Birthday/purpleLight.tres" id="2_qj7vn"]
+[ext_resource type="Material" uid="uid://c24luwcuq846f" path="res://Assets/Birthday/brownDarkest.tres" id="2_xcrfa"]
+[ext_resource type="Material" uid="uid://dv87ilg1x37j2" path="res://Assets/Birthday/brownDark.tres" id="3_cr7hf"]
+[ext_resource type="Material" uid="uid://brxnhuthin7a6" path="res://Assets/Birthday/_defaultMat.tres" id="5_70lwe"]
+[ext_resource type="Material" uid="uid://cubjw7trv7r4s" path="res://Assets/Birthday/red.tres" id="6_hlk8m"]
+[ext_resource type="Material" uid="uid://8kxumvl2ecp7" path="res://Assets/Birthday/purple.tres" id="7_hxyqt"]
+[ext_resource type="Material" uid="uid://nqocytkfvbb4" path="res://Assets/Birthday/yellow.tres" id="8_hdluv"]
+
+[node name="cakeBirthday2" instance=ExtResource("1_psty0")]
+
+[node name="slice" parent="cakeBirthday" index="0"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")
+
+[node name="slice2" parent="cakeBirthday" index="1"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")
+
+[node name="slice3" parent="cakeBirthday" index="2"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")
+
+[node name="slice4" parent="cakeBirthday" index="3"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")
+
+[node name="slice5" parent="cakeBirthday" index="4"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")
+
+[node name="slice6" parent="cakeBirthday" index="5"]
+surface_material_override/0 = ExtResource("2_xcrfa")
+surface_material_override/1 = ExtResource("3_cr7hf")
+surface_material_override/2 = ExtResource("2_qj7vn")
+surface_material_override/3 = ExtResource("5_70lwe")
+surface_material_override/4 = ExtResource("6_hlk8m")
+surface_material_override/5 = ExtResource("7_hxyqt")
+surface_material_override/6 = ExtResource("8_hdluv")

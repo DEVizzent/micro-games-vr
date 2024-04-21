@@ -1,6 +1,7 @@
 class_name MicroGamesManagerScript
 extends Node
 const EASY_GAMES: Array[String] = [
+	"res://Scenes/Games/Birthday/birthday1.tscn",
 	"res://Scenes/Games/Kitchen/kitchen1.tscn",
 	"res://Scenes/Games/Basket/basket1.tscn",
 	"res://Scenes/Games/Button/button1.tscn",

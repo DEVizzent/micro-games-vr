@@ -1,25 +1,26 @@
-[gd_scene load_steps=12 format=3 uid="uid://bcxelwbgqcq1v"]
+[gd_scene load_steps=13 format=3 uid="uid://bcxelwbgqcq1v"]
 
 [ext_resource type="PackedScene" uid="uid://c86y1fmmxo7do" path="res://Scenes/Games/base_game2.tscn" id="1_qdctm"]
 [ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="2_w05np"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_rpar5"]
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_1aa2y"]
 [ext_resource type="PackedScene" uid="uid://csi1aiu43cu4v" path="res://Assets/City/Scenes/House1.tscn" id="5_2wmml"]
+[ext_resource type="AudioStream" uid="uid://c5085h6mtwtua" path="res://Assets/Commands/spiderman-ES.ogg" id="5_8m0n6"]
 [ext_resource type="Texture2D" uid="uid://vtkgaleg6oh6" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Roughness.jpg" id="5_j2e08"]
 [ext_resource type="PackedScene" uid="uid://c0ye3nsce4vud" path="res://Assets/City/Scenes/Apartments1.tscn" id="6_xivgm"]
 [ext_resource type="PackedScene" uid="uid://b7ke4s7orkpwg" path="res://Assets/City/Scenes/SwimmingPool.tscn" id="7_ymt4l"]
 [ext_resource type="Script" path="res://Scenes/Games/GoalPlayerZone.gd" id="8_enrgn"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qmfr4"]
+radius = 5.2
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npba4"]
 albedo_color = Color(0.196078, 0.196078, 0.196078, 1)
 roughness_texture = ExtResource("5_j2e08")
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_qmfr4"]
-radius = 5.2
-
 [node name="BaseGameScene" instance=ExtResource("1_qdctm")]
 
-[node name="XROrigin3D" parent="." index="0"]
+[node name="XROrigin3D" parent="." index="1"]
 transform = Transform3D(0.0173128, 0, -0.99985, 0, 1, 0, 0.99985, 0, 0.0173128, -6.31315, 5.20596, 1.09502)
 
 [node name="MovementGrapple" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_w05np")]
@@ -34,8 +35,8 @@ grapple_enable_mask = 17
 
 [node name="RightHand" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("4_1aa2y")]
 
-[node name="MeshInstance3D" parent="Floor" index="1"]
-surface_material_override/0 = SubResource("StandardMaterial3D_npba4")
+[node name="CommandAudioStream" parent="." index="4"]
+stream = ExtResource("5_8m0n6")
 
 [node name="House1" parent="." index="6" instance=ExtResource("5_2wmml")]
 transform = Transform3D(0.0173128, 0, -0.99985, 0, 1, 0, 0.99985, 0, 0.0173128, -8.51869, 0, 0.892997)
@@ -69,3 +70,6 @@ script = ExtResource("8_enrgn")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piscina/Area3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.222044, 0, 0.271386)
 shape = SubResource("CylinderShape3D_qmfr4")
+
+[node name="MeshInstance3D" parent="Floor" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_npba4")

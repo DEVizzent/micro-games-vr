@@ -1,0 +1,72 @@
+[gd_scene load_steps=12 format=3 uid="uid://cv547hsq7xiv6"]
+
+[ext_resource type="PackedScene" uid="uid://5fhngxue8rtd" path="res://Scenes/Games/base_game.tscn" id="1_8mb3y"]
+[ext_resource type="PackedScene" uid="uid://bpwqwwuhvyw2k" path="res://Scenes/Elements/Birthday/blower.tscn" id="2_72kwj"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="3_01d72"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_i37j5"]
+[ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="5_rulus"]
+[ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="6_ogfwh"]
+[ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="7_n5ha7"]
+[ext_resource type="AudioStream" uid="uid://n361vxeaaoyo" path="res://Assets/Commands/birthday-ES.ogg" id="8_rycm8"]
+[ext_resource type="PackedScene" uid="uid://dr6awyxymy5b" path="res://Scenes/Elements/Birthday/cake.tscn" id="9_veje3"]
+
+[sub_resource type="Environment" id="Environment_inboc"]
+background_energy_multiplier = 0.1
+
+[sub_resource type="Resource" id="Resource_71iw3"]
+script = ExtResource("6_ogfwh")
+selected = false
+active = false
+collsion = true
+physics_layer = 0
+physics_mask = 0
+vertex_points = PackedVector3Array(2, 1, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 1, 0, 0, 1, 0, 1, 1, 2, 1, 1)
+vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
+active_vertex = -1
+edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 3, 2, 5, 5, 4, 6, 5, 1, 6, 4, 7, 7, 0, 6, 7)
+edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+active_edge = -1
+edge_face_indices = PackedInt32Array(0, 5, 0, 2, 0, 1, 0, 3, 1, 3, 1, 2, 1, 4, 2, 4, 2, 5, 3, 4, 3, 5, 4, 5)
+face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
+face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 5, 2, 1, 0, 3, 4, 7, 6, 7, 4, 5, 6, 1, 0, 7)
+face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
+face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
+face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
+face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+face_selected = PackedByteArray(0, 0, 0, 0, 0, 1)
+active_face = -1
+face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+
+[node name="BaseGameScene" instance=ExtResource("1_8mb3y")]
+game_time_modifier = 50.0
+
+[node name="WorldEnvironment" parent="." index="0"]
+environment = SubResource("Environment_inboc")
+
+[node name="XROrigin3D" parent="." index="1"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.645994, 0, 0.1798)
+
+[node name="Blower" parent="XROrigin3D/XRCamera3D" index="1" instance=ExtResource("2_72kwj")]
+transform = Transform3D(0.999999, 0, 0, 0, 0.0836778, -0.996493, 0, 0.996492, 0.0836779, -2.98023e-08, -0.239393, -0.623321)
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("3_01d72")]
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="0" instance=ExtResource("4_i37j5")]
+
+[node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)
+script = ExtResource("5_rulus")
+block_data = SubResource("Resource_71iw3")
+materials = Array[Material]([ExtResource("7_n5ha7")])
+
+[node name="DirectionalLight3D" parent="." index="3"]
+visible = false
+
+[node name="CommandAudioStream" parent="." index="5"]
+stream = ExtResource("8_rycm8")
+
+[node name="Cake" parent="." index="7" instance=ExtResource("9_veje3")]
+transform = Transform3D(0.99863, 0, -0.052336, 0, 1, 0, 0.052336, 0, 0.99863, 1.5172, 0.995957, 0.506552)
+
+[node name="Cake2" parent="." index="8" instance=ExtResource("9_veje3")]
+transform = Transform3D(0.99863, 0, -0.052336, 0, 1, 0, 0.052336, 0, 0.99863, 1.5172, 0.995957, -0.21532)

@@ -2,7 +2,7 @@ extends XRToolsSceneBase
 
 # NEXT: Add other level to the kitchen minigame
 
-@export_range(-5,5,0.1) var game_time_modifier : float = 0.0
+@export_range(-5,50,0.1) var game_time_modifier : float = 0.0
 var endGameTimer : SceneTreeTimer
 
 func _ready() -> void:

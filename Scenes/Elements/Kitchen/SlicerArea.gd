@@ -1,8 +1,7 @@
 extends Area3D
 
-# TODO: Grabar y anyadir command al minijuego de cocina
-
 @onready var slicer = $"../Slicer"
+@onready var knife : XRToolsPickable = $".."
 @onready var cooldown: Timer = $CutCooldown
 var cross_section_material = preload("res://Scenes/Elements/Kitchen/CarrotOrangeMaterial.tres")
 var meshSlicer = MeshSlicer.new()
@@ -69,7 +68,9 @@ func cutBody(body: Node3D)-> void:
 	body2.set_collision_mask_value(18,true)
 	body2.add_to_group("cutted_" + body.name)
 	EventBus.emit_signal("element_cutted")
-	#TODO - Give some feedback to the player
+	knife.get_picked_up_by_controller().trigger_haptic_pulse("haptic", 100.0, 1.0, 0.05, 0)
+	if body is XRToolsPickable and body.is_picked_up():
+			body.get_picked_up_by_controller().trigger_haptic_pulse("haptic", 100.0, 1.0, 0.05, 0)
 
 func calculate_center_of_mass(mesh:ArrayMesh):
 	#Not sure how well this work
