@@ -1,0 +1,130 @@
+[gd_scene load_steps=22 format=3 uid="uid://bt4nt7ufjc4e7"]
+
+[ext_resource type="Script" path="res://Scenes/Games/base_game.gd" id="1_f2u7v"]
+[ext_resource type="Texture2D" uid="uid://cmk5j30vi725j" path="res://Scenes/Games/Platformer/sprites/kenneyalpha.png" id="2_4hves"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="3_jnh57"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="3_qxbkj"]
+[ext_resource type="AudioStream" uid="uid://bsaw5lycmt3m4" path="res://Assets/success.ogg" id="4_heecd"]
+[ext_resource type="AudioStream" uid="uid://c24ltg42sd6ir" path="res://Assets/Commands/basket-ES.ogg" id="5_tes6q"]
+[ext_resource type="AudioStream" uid="uid://b1f3sm72man68" path="res://Assets/failure.ogg" id="6_a3irc"]
+[ext_resource type="Texture2D" uid="uid://dpyend2ro20py" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Color.jpg" id="7_r2owe"]
+[ext_resource type="Texture2D" uid="uid://bdfapqva83tkp" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_NormalGL.jpg" id="8_rbnui"]
+[ext_resource type="Texture2D" uid="uid://vtkgaleg6oh6" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Roughness.jpg" id="9_g4wfy"]
+[ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://Scenes/Games/Platformer/scenes/main-environment.tres" id="10_7nv6y"]
+[ext_resource type="Texture2D" uid="uid://ckdf8p1xihpx3" path="res://Scenes/Games/Platformer/sprites/kenney.png" id="11_l8r0m"]
+[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://Scenes/Games/Platformer/objects/player.tscn" id="13_b4ucf"]
+[ext_resource type="PackedScene" uid="uid://dy017k58p20sk" path="res://Scenes/Games/Platformer/objects/cloud.tscn" id="13_pb5w5"]
+[ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://Scenes/Games/Platformer/objects/coin.tscn" id="14_fq56k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d1isa"]
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("2_4hves")
+
+[sub_resource type="QuadMesh" id="QuadMesh_65ilp"]
+material = SubResource("StandardMaterial3D_d1isa")
+size = Vector2(2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_isfp7"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="QuadMesh" id="QuadMesh_fcviu"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m7gvc"]
+albedo_texture = ExtResource("7_r2owe")
+roughness_texture = ExtResource("9_g4wfy")
+normal_enabled = true
+normal_texture = ExtResource("8_rbnui")
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_706ca"]
+albedo_texture = ExtResource("11_l8r0m")
+
+[node name="Platformer" type="Node3D"]
+script = ExtResource("1_f2u7v")
+game_time_modifier = 8.4
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+transform = Transform3D(0.0173128, 0, -0.99985, 0, 1, 0, 0.99985, 0, 0.0173128, 0, 0, 0)
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+far = 300.0
+
+[node name="CompleteMessage" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.515638, -0.21687, -1.32355)
+visible = false
+mesh = SubResource("QuadMesh_65ilp")
+skeleton = NodePath("../../..")
+
+[node name="LeftHand" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.5)
+tracker = &"left_hand"
+pose = &"aim"
+
+[node name="RightHand" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, -0.5)
+tracker = &"right_hand"
+pose = &"aim"
+
+[node name="MovementTurn" parent="XROrigin3D/RightHand" instance=ExtResource("3_jnh57")]
+
+[node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("3_qxbkj")]
+collision_mask = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.954225, 0.221911, -0.200526, 0, 0.670453, 0.741952, 0.299091, -0.707989, 0.639763, 0, 0, 0)
+
+[node name="SuccessAudioStream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_heecd")
+bus = &"Music Effect"
+
+[node name="CommandAudioStream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tes6q")
+
+[node name="FailAudioStream" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_a3irc")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_isfp7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("QuadMesh_fcviu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_m7gvc")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("10_7nv6y")
+
+[node name="World" type="Node3D" parent="."]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 1.02589, 1.31941, 0)
+
+[node name="Player" parent="World" instance=ExtResource("13_b4ucf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21247, -0.088016, -5.08835)
+movement_speed = 180
+jump_strength = 8
+
+[node name="coin" parent="World" instance=ExtResource("14_fq56k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, -0.123432, -1.0057)
+
+[node name="Nubes" type="Node3D" parent="World"]
+
+[node name="Nube1" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 4.57908, -2.00798, 0, 2.00798, 4.57908, -3.85623, 12.0561, 4.93382)
+
+[node name="Nube2" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 3.52119, 3.54982, 0, -3.54982, 3.52119, 20.2882, 7.11814, -30.6997)
+
+[node name="Nube3" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, -0.105846, 4.99888, 0, -4.99888, -0.105846, 20.2882, 5.66354, 29.8669)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.858, 2, 0)
+material_override = SubResource("StandardMaterial3D_706ca")
+texture = ExtResource("2_4hves")

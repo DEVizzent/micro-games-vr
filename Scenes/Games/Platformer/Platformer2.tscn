@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://coqj5rd15m1dh"]
+
+[ext_resource type="PackedScene" uid="uid://bt4nt7ufjc4e7" path="res://Scenes/Games/Platformer/Platformer.tscn" id="1_0rmsp"]
+[ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://Scenes/Games/Platformer/objects/platform.tscn" id="11_rdof4"]
+[ext_resource type="PackedScene" uid="uid://uqr4hswv6d2g" path="res://Scenes/Games/Platformer/objects/platform_grass_large_round.tscn" id="12_1he4o"]
+[ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://Scenes/Games/Platformer/objects/coin.tscn" id="14_2hs3m"]
+
+[node name="Platformer" instance=ExtResource("1_0rmsp")]
+
+[node name="Player" parent="World" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21247, -0.0880156, -6.93548)
+
+[node name="coin" parent="World" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, -0.123432, 0.378558)
+
+[node name="platform3" parent="World" index="2" instance=ExtResource("11_rdof4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -1.37938, -0.612097)
+
+[node name="platform" parent="World" index="3" instance=ExtResource("11_rdof4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -1.37938, -6.89548)
+
+[node name="platform2" parent="World" index="4" instance=ExtResource("11_rdof4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -1.37938, -4.85881)
+
+[node name="coin2" parent="World" index="5" instance=ExtResource("14_2hs3m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, -0.123432, 6.40919)
+
+[node name="platform-grass-large-round" parent="World" index="6" instance=ExtResource("12_1he4o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19342, -1.32123, 6.45702)
+
+[node name="platform4" parent="World" index="7" instance=ExtResource("11_rdof4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -1.37938, 1.3917)

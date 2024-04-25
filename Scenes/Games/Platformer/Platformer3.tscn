@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0xo66ohli3yk"]
+
+[ext_resource type="PackedScene" uid="uid://bt4nt7ufjc4e7" path="res://Scenes/Games/Platformer/Platformer.tscn" id="1_3koar"]
+[ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://Scenes/Games/Platformer/objects/platform.tscn" id="2_g2hqj"]
+[ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://Scenes/Games/Platformer/objects/coin.tscn" id="3_ch5rx"]
+[ext_resource type="PackedScene" uid="uid://uqr4hswv6d2g" path="res://Scenes/Games/Platformer/objects/platform_grass_large_round.tscn" id="4_fycy6"]
+
+[node name="Platformer" instance=ExtResource("1_3koar")]
+
+[node name="Player" parent="World" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21247, -3.77223, -6.93548)
+
+[node name="coin" parent="World" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, 0.615354, 0.378558)
+
+[node name="platform3" parent="World" index="2" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -0.640594, -0.612097)
+
+[node name="platform" parent="World" index="3" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -6.89548)
+
+[node name="platform2" parent="World" index="4" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -4.85881)
+
+[node name="coin2" parent="World" index="5" instance=ExtResource("3_ch5rx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, 3.69937, 6.40919)
+
+[node name="platform-grass-large-round" parent="World" index="6" instance=ExtResource("4_fycy6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19342, 2.50157, 6.45702)
+
+[node name="platform4" parent="World" index="7" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -0.640594, 1.3917)
+
+[node name="platform5" parent="World" index="9" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -2.88289)
+
+[node name="platform6" parent="World" index="10" instance=ExtResource("2_g2hqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -0.846216)
