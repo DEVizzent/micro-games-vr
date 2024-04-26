@@ -70,6 +70,8 @@ point_count = 3
 colors = PackedColorArray(0.996094, 0.910156, 0.351563, 1, 1, 1, 1, 1)
 
 [node name="coin" type="Area3D" groups=["target"]]
+collision_layer = 32
+collision_mask = 32
 script = ExtResource("2_gaakh")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]

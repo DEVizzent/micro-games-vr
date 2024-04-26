@@ -15,6 +15,7 @@ signal coin_collected
 @export var movement_speed = 250
 @export var jump_strength = 4
 
+var _origin_position: Vector3
 var movement_velocity: Vector3
 var rotation_direction: float
 var gravity = 0
@@ -36,6 +37,10 @@ var coins = 0
 @onready var _right_controller := XRHelpers.get_xr_controller(self, right_controller_path)
 @onready var _camera := XRHelpers.get_xr_camera(self, camera_path)
 
+
+func _ready():
+	_origin_position = position
+	
 # Functions
 
 func _physics_process(delta):
@@ -67,7 +72,7 @@ func _physics_process(delta):
 	# Falling/respawning
 	
 	if position.y < -10:
-		get_tree().reload_current_scene()
+		position = _origin_position
 	
 	# Animation for scale (jumping and landing)
 	

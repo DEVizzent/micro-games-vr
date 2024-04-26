@@ -102,6 +102,33 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m7gvc")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("10_7nv6y")
 
+[node name="Nubes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02589, 1.31941, 0)
+
+[node name="Nube1" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 4.57908, -2.00798, 0, 2.00798, 4.57908, -3.85623, 12.0561, 4.93382)
+
+[node name="Nube2" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 3.52119, 3.54982, 0, -3.54982, 3.52119, 20.2882, 7.11814, -30.6997)
+
+[node name="Nube3" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, -0.105846, 4.99888, 0, -4.99888, -0.105846, 20.2882, 5.66354, 29.8669)
+
+[node name="Nube4" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 1.88145, 4.63251, 0, -4.63251, 1.88145, 17.5651, -0.242499, 17.5648)
+
+[node name="Nube5" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(1.12629, 3.45859, -3.43069, 1.10612, 3.24766, 3.6372, 4.74426, -1.57826, -0.0335632, 1.98114, 8.68358, -30.6997)
+
+[node name="Nube6" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(0.515438, -1.99728, -4.55468, -1.91156, 4.14777, -2.03517, 4.59132, 1.95111, -0.336001, -21.3139, 12.0561, -12.4496)
+
+[node name="Nube7" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(0.515438, -1.99728, -4.55468, -1.91156, 4.14777, -2.03517, 4.59132, 1.95111, -0.336001, 31, 12.056, -4)
+
+[node name="Nube8" parent="Nubes" instance=ExtResource("13_pb5w5")]
+transform = Transform3D(5, 0, 0, 0, 4.57908, -2.00798, 0, 2.00798, 4.57908, 30, 9, 5)
+
 [node name="World" type="Node3D" parent="."]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 1.02589, 1.31941, 0)
 
@@ -112,17 +139,6 @@ jump_strength = 8
 
 [node name="coin" parent="World" instance=ExtResource("14_fq56k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2245, -0.123432, -1.0057)
-
-[node name="Nubes" type="Node3D" parent="World"]
-
-[node name="Nube1" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
-transform = Transform3D(5, 0, 0, 0, 4.57908, -2.00798, 0, 2.00798, 4.57908, -3.85623, 12.0561, 4.93382)
-
-[node name="Nube2" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
-transform = Transform3D(5, 0, 0, 0, 3.52119, 3.54982, 0, -3.54982, 3.52119, 20.2882, 7.11814, -30.6997)
-
-[node name="Nube3" parent="World/Nubes" instance=ExtResource("13_pb5w5")]
-transform = Transform3D(5, 0, 0, 0, -0.105846, 4.99888, 0, -4.99888, -0.105846, 20.2882, 5.66354, 29.8669)
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.858, 2, 0)
