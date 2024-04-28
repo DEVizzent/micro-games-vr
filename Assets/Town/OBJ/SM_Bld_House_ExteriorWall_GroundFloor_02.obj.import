@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c2r2erp6f0pav"
+path="res://.godot/imported/SM_Bld_House_ExteriorWall_GroundFloor_02.obj-21ccf4a0b5645f8ae72871408a0376db.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_ExteriorWall_GroundFloor_02.obj-21ccf4a0b5645f8ae72871408a0376db.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_ExteriorWall_GroundFloor_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_ExteriorWall_GroundFloor_02.obj-21ccf4a0b5645f8ae72871408a0376db.mesh", "res://.godot/imported/SM_Bld_House_ExteriorWall_GroundFloor_02.obj-21ccf4a0b5645f8ae72871408a0376db.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

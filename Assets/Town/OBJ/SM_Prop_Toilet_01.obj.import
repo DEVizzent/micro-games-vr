@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cyu7i2i1pspey"
+path="res://.godot/imported/SM_Prop_Toilet_01.obj-ea0fc7c64c5f0a3481559357bf2800ed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Toilet_01.obj-ea0fc7c64c5f0a3481559357bf2800ed.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Toilet_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Toilet_01.obj-ea0fc7c64c5f0a3481559357bf2800ed.mesh", "res://.godot/imported/SM_Prop_Toilet_01.obj-ea0fc7c64c5f0a3481559357bf2800ed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -81,27 +81,27 @@ open_pose = ExtResource("7_njc4t")
 closed_pose = ExtResource("7_njc4t")
 
 [node name="Carrot" instance=ExtResource("1_l8au2")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.24337)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.000393644)
 picked_up_layer = 81920
 
 [node name="CollisionShape3D" parent="." index="0"]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.00306021, 0.00238205, -0.0066452)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.00306021, -0.271251, -0.00664519)
 shape = ExtResource("2_cbi5b")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1"]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 1.86265e-09, 0, -1.86265e-09, 0.8, 0, 0, 0)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 1.86265e-09, 0, -1.86265e-09, 0.8, 0, -0.273633, 1.19609e-08)
 gi_mode = 0
 mesh = SubResource("ArrayMesh_tuhe3")
 skeleton = NodePath("")
 
 [node name="GrabPointHandLeft" parent="." index="2" instance=ExtResource("2_b88jm")]
-transform = Transform3D(-0.997905, -0.064689, 0, 0.064689, -0.997905, 0, 0, 0, 1, -0.0234739, 0.314326, -0.0671309)
+transform = Transform3D(-0.997905, -0.064689, 0, 0.064689, -0.997905, 0, 0, 0, 1, -0.0234739, 0.0406928, -0.0671309)
 hand_pose = SubResource("Resource_mfhj2")
 
 [node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("6_odcvr")]
-transform = Transform3D(-0.981259, 0.192693, 0, -0.192693, -0.981259, 0, 0, 0, 1, 0.0171554, 0.314642, -0.0744823)
+transform = Transform3D(-0.981259, 0.192693, 0, -0.192693, -0.981259, 0, 0, 0, 1, 0.0171554, 0.0410088, -0.0744823)
 hand_pose = SubResource("Resource_7kol5")
 
 [node name="HighlightRing" parent="." index="4" instance=ExtResource("8_8ypsj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2411, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0325332, 1.19609e-08)
 visible = false

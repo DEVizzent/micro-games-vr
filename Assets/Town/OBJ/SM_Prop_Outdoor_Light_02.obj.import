@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0xmsiaoin335"
+path="res://.godot/imported/SM_Prop_Outdoor_Light_02.obj-968b182b05815eaf405e27be16694184.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Outdoor_Light_02.obj-968b182b05815eaf405e27be16694184.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Outdoor_Light_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Outdoor_Light_02.obj-968b182b05815eaf405e27be16694184.mesh", "res://.godot/imported/SM_Prop_Outdoor_Light_02.obj-968b182b05815eaf405e27be16694184.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

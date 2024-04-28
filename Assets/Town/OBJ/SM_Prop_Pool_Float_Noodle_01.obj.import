@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clheokkufyv6q"
+path="res://.godot/imported/SM_Prop_Pool_Float_Noodle_01.obj-8d94d95fded786ca3bcadb2212febbac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Pool_Float_Noodle_01.obj-8d94d95fded786ca3bcadb2212febbac.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Pool_Float_Noodle_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Pool_Float_Noodle_01.obj-8d94d95fded786ca3bcadb2212febbac.mesh", "res://.godot/imported/SM_Prop_Pool_Float_Noodle_01.obj-8d94d95fded786ca3bcadb2212febbac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

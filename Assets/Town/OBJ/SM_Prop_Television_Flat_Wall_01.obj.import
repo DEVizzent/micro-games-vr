@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwtc1rhb5sors"
+path="res://.godot/imported/SM_Prop_Television_Flat_Wall_01.obj-a680b8be849286c9140b873467b64f8b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Television_Flat_Wall_01.obj-a680b8be849286c9140b873467b64f8b.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Television_Flat_Wall_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Television_Flat_Wall_01.obj-a680b8be849286c9140b873467b64f8b.mesh", "res://.godot/imported/SM_Prop_Television_Flat_Wall_01.obj-a680b8be849286c9140b873467b64f8b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

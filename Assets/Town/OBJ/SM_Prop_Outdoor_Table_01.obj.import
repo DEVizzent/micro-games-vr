@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl1il7a2k1u4o"
+path="res://.godot/imported/SM_Prop_Outdoor_Table_01.obj-11930dbccb7f7c7d3b5ae5a3bc5746ee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Outdoor_Table_01.obj-11930dbccb7f7c7d3b5ae5a3bc5746ee.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Outdoor_Table_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Outdoor_Table_01.obj-11930dbccb7f7c7d3b5ae5a3bc5746ee.mesh", "res://.godot/imported/SM_Prop_Outdoor_Table_01.obj-11930dbccb7f7c7d3b5ae5a3bc5746ee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

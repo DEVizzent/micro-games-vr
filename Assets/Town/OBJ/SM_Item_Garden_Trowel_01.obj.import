@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wq2k2seaqq26"
+path="res://.godot/imported/SM_Item_Garden_Trowel_01.obj-3a52c583d0eef20e254b47858965b6fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_Garden_Trowel_01.obj-3a52c583d0eef20e254b47858965b6fd.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_Garden_Trowel_01.obj"
+dest_files=["res://.godot/imported/SM_Item_Garden_Trowel_01.obj-3a52c583d0eef20e254b47858965b6fd.mesh", "res://.godot/imported/SM_Item_Garden_Trowel_01.obj-3a52c583d0eef20e254b47858965b6fd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5f5cw81m7d5d"
+path="res://.godot/imported/SM_Prop_Propane_Tall_01.obj-9cb1239adce438b4e591f14709c39140.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Propane_Tall_01.obj-9cb1239adce438b4e591f14709c39140.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Propane_Tall_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Propane_Tall_01.obj-9cb1239adce438b4e591f14709c39140.mesh", "res://.godot/imported/SM_Prop_Propane_Tall_01.obj-9cb1239adce438b4e591f14709c39140.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

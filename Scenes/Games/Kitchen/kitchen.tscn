@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://dmv55rvgf2n34"]
+
+[ext_resource type="PackedScene" uid="uid://c86y1fmmxo7do" path="res://Scenes/Games/base_game2.tscn" id="1_3p06s"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_5qrkx"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_djyd6"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_fea85"]
+[ext_resource type="PackedScene" uid="uid://b7dpyahkl34v0" path="res://Scenes/Elements/Kitchen/Knife.tscn" id="5_n7023"]
+[ext_resource type="Script" path="res://Scenes/Games/Kitchen/CookingElements.gd" id="6_bvi6g"]
+[ext_resource type="PackedScene" uid="uid://rm8xdrwvchi4" path="res://Assets/Town/fullTown.tscn" id="7_jj48u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6hn8v"]
+size = Vector3(4, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nscr7"]
+size = Vector3(5, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oo27r"]
+size = Vector3(3, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sqpn6"]
+size = Vector3(1, 2.64246, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h62kl"]
+size = Vector3(2, 1, 0.6)
+
+[node name="BaseGameScene2" instance=ExtResource("1_3p06s")]
+
+[node name="XROrigin3D" parent="." index="1"]
+transform = Transform3D(0.99916, 0, 0.0409689, 0, 1, 0, -0.0409689, 0, 0.99916, -0.0648069, 0, 0.385085)
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_5qrkx")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" index="1" instance=ExtResource("3_djyd6")]
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("4_fea85")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("3_djyd6")]
+
+[node name="MeshInstance3D" parent="Floor" index="1"]
+visible = false
+
+[node name="Knife" parent="." index="7" instance=ExtResource("5_n7023")]
+transform = Transform3D(-0.0236645, 0, 0.99972, 0, 1, 0, -0.99972, 0, -0.0236645, 0.34075, 1.00099, -0.267273)
+
+[node name="CookingElements" type="Node3D" parent="." index="8" groups=["CookingElementsNode"]]
+script = ExtResource("6_bvi6g")
+
+[node name="Root Scene" parent="." index="9" instance=ExtResource("7_jj48u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 24)
+
+[node name="StaticBodies" type="Node3D" parent="Root Scene" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -24)
+
+[node name="Bench" type="StaticBody3D" parent="Root Scene/StaticBodies" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBodies/Bench" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.495014, 0.456316, -0.499782)
+shape = SubResource("BoxShape3D_6hn8v")
+
+[node name="Bench2" type="StaticBody3D" parent="Root Scene/StaticBodies" index="1"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.50572, 0, 1.47686)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBodies/Bench2" index="0"]
+transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0.0175643, 0.456316, -0.499782)
+shape = SubResource("BoxShape3D_nscr7")
+
+[node name="Bench3" type="StaticBody3D" parent="Root Scene/StaticBodies" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.03588)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBodies/Bench3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34136, 0.456316, -0.538872)
+shape = SubResource("BoxShape3D_oo27r")
+
+[node name="Fridge" type="StaticBody3D" parent="Root Scene/StaticBodies" index="3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBodies/Fridge" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01588, 0.777544, -0.562019)
+shape = SubResource("BoxShape3D_sqpn6")
+
+[node name="Cupboard" type="StaticBody3D" parent="Root Scene/StaticBodies" index="4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root Scene/StaticBodies/Cupboard" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000926524, 2.37674, -0.653042)
+shape = SubResource("BoxShape3D_h62kl")

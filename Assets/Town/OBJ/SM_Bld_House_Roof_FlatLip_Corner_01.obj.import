@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctbq16esr13go"
+path="res://.godot/imported/SM_Bld_House_Roof_FlatLip_Corner_01.obj-762d869a28a9d9224b61cf7276c75273.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Roof_FlatLip_Corner_01.obj-762d869a28a9d9224b61cf7276c75273.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Roof_FlatLip_Corner_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Roof_FlatLip_Corner_01.obj-762d869a28a9d9224b61cf7276c75273.mesh", "res://.godot/imported/SM_Bld_House_Roof_FlatLip_Corner_01.obj-762d869a28a9d9224b61cf7276c75273.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

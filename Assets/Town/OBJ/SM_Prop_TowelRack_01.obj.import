@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp8wa08ewegjr"
+path="res://.godot/imported/SM_Prop_TowelRack_01.obj-1e863072d5567e9d94821e6a4341e543.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_TowelRack_01.obj-1e863072d5567e9d94821e6a4341e543.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_TowelRack_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_TowelRack_01.obj-1e863072d5567e9d94821e6a4341e543.mesh", "res://.godot/imported/SM_Prop_TowelRack_01.obj-1e863072d5567e9d94821e6a4341e543.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1l6xsgkfqdb5"
+path="res://.godot/imported/SM_Prop_CookingPot_01.obj-8be8e4b6ca9ca545c4d4cd9db957f5c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_CookingPot_01.obj-8be8e4b6ca9ca545c4d4cd9db957f5c2.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_CookingPot_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_CookingPot_01.obj-8be8e4b6ca9ca545c4d4cd9db957f5c2.mesh", "res://.godot/imported/SM_Prop_CookingPot_01.obj-8be8e4b6ca9ca545c4d4cd9db957f5c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

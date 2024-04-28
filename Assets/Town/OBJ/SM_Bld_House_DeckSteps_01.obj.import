@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://buy1xn1proc7f"
+path="res://.godot/imported/SM_Bld_House_DeckSteps_01.obj-ac1168e1e3231c3fea47314916e6ab2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_DeckSteps_01.obj-ac1168e1e3231c3fea47314916e6ab2d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_DeckSteps_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_DeckSteps_01.obj-ac1168e1e3231c3fea47314916e6ab2d.mesh", "res://.godot/imported/SM_Bld_House_DeckSteps_01.obj-ac1168e1e3231c3fea47314916e6ab2d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

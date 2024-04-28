@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5bo28lt3r3dq"
+path="res://.godot/imported/SM_Item_JuiceJug_01.obj-aa5bba13421ccb11b6f783f550000418.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_JuiceJug_01.obj-aa5bba13421ccb11b6f783f550000418.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_JuiceJug_01.obj"
+dest_files=["res://.godot/imported/SM_Item_JuiceJug_01.obj-aa5bba13421ccb11b6f783f550000418.mesh", "res://.godot/imported/SM_Item_JuiceJug_01.obj-aa5bba13421ccb11b6f783f550000418.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8srclrqpivsh"
+path="res://.godot/imported/SM_Prop_AirVent_03.obj-4c094ca4eea8349c616d5075cfb7700f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_AirVent_03.obj-4c094ca4eea8349c616d5075cfb7700f.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_AirVent_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_AirVent_03.obj-4c094ca4eea8349c616d5075cfb7700f.mesh", "res://.godot/imported/SM_Prop_AirVent_03.obj-4c094ca4eea8349c616d5075cfb7700f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

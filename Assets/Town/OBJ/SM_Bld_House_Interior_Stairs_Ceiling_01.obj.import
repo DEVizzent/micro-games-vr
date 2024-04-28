@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://beywaqcrry3rs"
+path="res://.godot/imported/SM_Bld_House_Interior_Stairs_Ceiling_01.obj-bcfa42eea0a01d8498d2141798335ade.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Interior_Stairs_Ceiling_01.obj-bcfa42eea0a01d8498d2141798335ade.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Interior_Stairs_Ceiling_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Interior_Stairs_Ceiling_01.obj-bcfa42eea0a01d8498d2141798335ade.mesh", "res://.godot/imported/SM_Bld_House_Interior_Stairs_Ceiling_01.obj-bcfa42eea0a01d8498d2141798335ade.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

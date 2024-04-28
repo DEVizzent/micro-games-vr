@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cq74i1wkcsqih"
+path="res://.godot/imported/SM_Env_Driveway_01.obj-783dc47bc47288e6f30e121ef7fb9a8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Driveway_01.obj-783dc47bc47288e6f30e121ef7fb9a8c.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Env_Driveway_01.obj"
+dest_files=["res://.godot/imported/SM_Env_Driveway_01.obj-783dc47bc47288e6f30e121ef7fb9a8c.mesh", "res://.godot/imported/SM_Env_Driveway_01.obj-783dc47bc47288e6f30e121ef7fb9a8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

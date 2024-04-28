@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dekc7durea2mo"
+path="res://.godot/imported/SM_Prop_Kitchen_Counter_01.obj-3116d20e06e2f56b25760b2fc8f53484.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Kitchen_Counter_01.obj-3116d20e06e2f56b25760b2fc8f53484.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Kitchen_Counter_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Kitchen_Counter_01.obj-3116d20e06e2f56b25760b2fc8f53484.mesh", "res://.godot/imported/SM_Prop_Kitchen_Counter_01.obj-3116d20e06e2f56b25760b2fc8f53484.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

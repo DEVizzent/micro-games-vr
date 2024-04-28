@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://blvrhs14yccdm"
+path="res://.godot/imported/SM_Prop_Lamp_02.obj-449450fad68879efb01ca20eca5bac9f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Lamp_02.obj-449450fad68879efb01ca20eca5bac9f.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Lamp_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Lamp_02.obj-449450fad68879efb01ca20eca5bac9f.mesh", "res://.godot/imported/SM_Prop_Lamp_02.obj-449450fad68879efb01ca20eca5bac9f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

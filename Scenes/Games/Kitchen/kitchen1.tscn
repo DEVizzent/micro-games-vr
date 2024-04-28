@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://cp5mgihq2qhjs"]
 
-[ext_resource type="PackedScene" uid="uid://ts40aaqdkwb2" path="res://Scenes/Games/Kitchen/base_kitchen.tscn" id="1_1u60x"]
+[ext_resource type="PackedScene" uid="uid://dmv55rvgf2n34" path="res://Scenes/Games/Kitchen/kitchen.tscn" id="1_kuhsi"]
 [ext_resource type="PackedScene" uid="uid://dqhufff4ol3mi" path="res://Scenes/Elements/Kitchen/Carrot.tscn" id="3_6okb3"]
 
-[node name="Kitchen1" instance=ExtResource("1_1u60x")]
+[node name="BaseGameScene2" instance=ExtResource("1_kuhsi")]
 
 [node name="Carrot" parent="CookingElements" index="0" groups=["to_cut"] instance=ExtResource("3_6okb3")]
-transform = Transform3D(-0.999848, -0.0173455, -0.00192906, 0, 0.110532, -0.993873, 0.0174525, -0.993721, -0.110515, 1.09091, 1.12957, -0.2037)
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -0.40235, 1.12957, -0.422682)
+center_of_mass_mode = 1

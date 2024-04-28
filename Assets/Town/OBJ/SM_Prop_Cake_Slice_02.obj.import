@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bglihnwrs2en5"
+path="res://.godot/imported/SM_Prop_Cake_Slice_02.obj-88d7fdf966f8a025e63ad4ef4d0adeee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Cake_Slice_02.obj-88d7fdf966f8a025e63ad4ef4d0adeee.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Cake_Slice_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Cake_Slice_02.obj-88d7fdf966f8a025e63ad4ef4d0adeee.mesh", "res://.godot/imported/SM_Prop_Cake_Slice_02.obj-88d7fdf966f8a025e63ad4ef4d0adeee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

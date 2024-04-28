@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c84ah87ux65bx"
+path="res://.godot/imported/SM_Prop_Deckchair_02.obj-3bf16615c2e5a3c9643176726de1769d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Deckchair_02.obj-3bf16615c2e5a3c9643176726de1769d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Deckchair_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Deckchair_02.obj-3bf16615c2e5a3c9643176726de1769d.mesh", "res://.godot/imported/SM_Prop_Deckchair_02.obj-3bf16615c2e5a3c9643176726de1769d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ckvrxlogownl8"
+path="res://.godot/imported/SM_Prop_FridgeDrinks_01.obj-91105b880f24498f2876d5878e2c0dda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_FridgeDrinks_01.obj-91105b880f24498f2876d5878e2c0dda.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_FridgeDrinks_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_FridgeDrinks_01.obj-91105b880f24498f2876d5878e2c0dda.mesh", "res://.godot/imported/SM_Prop_FridgeDrinks_01.obj-91105b880f24498f2876d5878e2c0dda.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

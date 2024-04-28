@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dm5uyq6e4rtim"
+path="res://.godot/imported/SM_Prop_ParkBench_01.obj-ad7e502c4da85c95d20d941fe9ecd259.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_ParkBench_01.obj-ad7e502c4da85c95d20d941fe9ecd259.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_ParkBench_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_ParkBench_01.obj-ad7e502c4da85c95d20d941fe9ecd259.mesh", "res://.godot/imported/SM_Prop_ParkBench_01.obj-ad7e502c4da85c95d20d941fe9ecd259.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

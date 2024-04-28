@@ -1,16 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://bejjk5cdvkrrw"]
 
-[ext_resource type="PackedScene" uid="uid://ts40aaqdkwb2" path="res://Scenes/Games/Kitchen/base_kitchen.tscn" id="1_lp0kk"]
-[ext_resource type="PackedScene" uid="uid://dqhufff4ol3mi" path="res://Scenes/Elements/Kitchen/Carrot.tscn" id="3_l0mtj"]
+[ext_resource type="PackedScene" uid="uid://dmv55rvgf2n34" path="res://Scenes/Games/Kitchen/kitchen.tscn" id="1_4fum0"]
+[ext_resource type="PackedScene" uid="uid://dqhufff4ol3mi" path="res://Scenes/Elements/Kitchen/Carrot.tscn" id="2_ubc21"]
 
-[node name="Kitchen2" instance=ExtResource("1_lp0kk")]
-game_time_modifier = 1.5
+[node name="BaseGameScene2" instance=ExtResource("1_4fum0")]
 
-[node name="PlayerBody" parent="XROrigin3D" index="3"]
-collision_mask = 1023
+[node name="Carrot" parent="CookingElements" index="0" groups=["to_cut"] instance=ExtResource("2_ubc21")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -0.40235, 1.08695, -0.422682)
+center_of_mass_mode = 1
 
-[node name="Carrot" parent="CookingElements" index="0" groups=["to_cut"] instance=ExtResource("3_l0mtj")]
-transform = Transform3D(-0.999848, -0.0173455, -0.00192906, 0, 0.110532, -0.993873, 0.0174525, -0.993721, -0.110515, 1.09091, 1.12957, -0.2037)
-
-[node name="Carrot2" parent="CookingElements" index="1" groups=["to_cut"] instance=ExtResource("3_l0mtj")]
-transform = Transform3D(-0.999848, -0.0173455, -0.00192906, 0, 0.110532, -0.993873, 0.0174525, -0.993721, -0.110515, 1.38371, 1.12957, -0.2037)
+[node name="Carrot2" parent="CookingElements" index="1" groups=["to_cut"] instance=ExtResource("2_ubc21")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -0.436667, 1.08695, -0.196631)
+center_of_mass_mode = 1

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd84ai3f3f2ts"
+path="res://.godot/imported/SM_Prop_ToyBlock_02.obj-1d4f8c2ba0d3b4028f3665f93beddef4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_ToyBlock_02.obj-1d4f8c2ba0d3b4028f3665f93beddef4.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_ToyBlock_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_ToyBlock_02.obj-1d4f8c2ba0d3b4028f3665f93beddef4.mesh", "res://.godot/imported/SM_Prop_ToyBlock_02.obj-1d4f8c2ba0d3b4028f3665f93beddef4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

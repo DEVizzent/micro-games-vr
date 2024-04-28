@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://caf5c634rojvc"
+path="res://.godot/imported/SM_Prop_Flowers_03.obj-ab7d31a7e9f11a7cc73dc17f84a2a3f1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Flowers_03.obj-ab7d31a7e9f11a7cc73dc17f84a2a3f1.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Flowers_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_Flowers_03.obj-ab7d31a7e9f11a7cc73dc17f84a2a3f1.mesh", "res://.godot/imported/SM_Prop_Flowers_03.obj-ab7d31a7e9f11a7cc73dc17f84a2a3f1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

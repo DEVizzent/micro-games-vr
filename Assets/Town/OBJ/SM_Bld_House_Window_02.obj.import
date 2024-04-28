@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cq2t00uj3k4ku"
+path="res://.godot/imported/SM_Bld_House_Window_02.obj-7d7ebc5c79879935d7824f424d598000.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Window_02.obj-7d7ebc5c79879935d7824f424d598000.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Window_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Window_02.obj-7d7ebc5c79879935d7824f424d598000.mesh", "res://.godot/imported/SM_Bld_House_Window_02.obj-7d7ebc5c79879935d7824f424d598000.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

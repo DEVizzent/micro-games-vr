@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clmfl5rcr52ai"
+path="res://.godot/imported/SM_Bld_House_Interior_StairsRail_03.obj-1bef6878f42c4086a0d3e492dd72efeb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Interior_StairsRail_03.obj-1bef6878f42c4086a0d3e492dd72efeb.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Interior_StairsRail_03.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Interior_StairsRail_03.obj-1bef6878f42c4086a0d3e492dd72efeb.mesh", "res://.godot/imported/SM_Bld_House_Interior_StairsRail_03.obj-1bef6878f42c4086a0d3e492dd72efeb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

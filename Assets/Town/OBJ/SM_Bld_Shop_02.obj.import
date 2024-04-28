@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3x317dpei2l0"
+path="res://.godot/imported/SM_Bld_Shop_02.obj-bfe5a160cd687a66f4949c17588af81c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_Shop_02.obj-bfe5a160cd687a66f4949c17588af81c.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_Shop_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_Shop_02.obj-bfe5a160cd687a66f4949c17588af81c.mesh", "res://.godot/imported/SM_Bld_Shop_02.obj-bfe5a160cd687a66f4949c17588af81c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

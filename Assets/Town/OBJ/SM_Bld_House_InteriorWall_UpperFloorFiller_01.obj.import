@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0c48uahvntbf"
+path="res://.godot/imported/SM_Bld_House_InteriorWall_UpperFloorFiller_01.obj-1f4d0712da414ea7568b6a8756f5bc02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_InteriorWall_UpperFloorFiller_01.obj-1f4d0712da414ea7568b6a8756f5bc02.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_InteriorWall_UpperFloorFiller_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_InteriorWall_UpperFloorFiller_01.obj-1f4d0712da414ea7568b6a8756f5bc02.mesh", "res://.godot/imported/SM_Bld_House_InteriorWall_UpperFloorFiller_01.obj-1f4d0712da414ea7568b6a8756f5bc02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxvnydhw52jfy"
+path="res://.godot/imported/SM_Prop_Candles_01.obj-d1027b1a11755dd5f24753c6955781e6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Candles_01.obj-d1027b1a11755dd5f24753c6955781e6.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Candles_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Candles_01.obj-d1027b1a11755dd5f24753c6955781e6.mesh", "res://.godot/imported/SM_Prop_Candles_01.obj-d1027b1a11755dd5f24753c6955781e6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

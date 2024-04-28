@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://btu02c46h1dxs"
+path="res://.godot/imported/SM_Prop_TVCabinet_01_Combined.obj-4677b32186839108a51d8107dd2973e2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_TVCabinet_01_Combined.obj-4677b32186839108a51d8107dd2973e2.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_TVCabinet_01_Combined.obj"
+dest_files=["res://.godot/imported/SM_Prop_TVCabinet_01_Combined.obj-4677b32186839108a51d8107dd2973e2.mesh", "res://.godot/imported/SM_Prop_TVCabinet_01_Combined.obj-4677b32186839108a51d8107dd2973e2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

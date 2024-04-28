@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ccyfi2hjwlwbk"
+path="res://.godot/imported/SM_Bld_House_Roof_Angled_Corner_Middle_02.obj-63af00da9be24128d233e528dd8cdf5d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Roof_Angled_Corner_Middle_02.obj-63af00da9be24128d233e528dd8cdf5d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Roof_Angled_Corner_Middle_02.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Roof_Angled_Corner_Middle_02.obj-63af00da9be24128d233e528dd8cdf5d.mesh", "res://.godot/imported/SM_Bld_House_Roof_Angled_Corner_Middle_02.obj-63af00da9be24128d233e528dd8cdf5d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

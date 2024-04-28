@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dco408qb0opko"]
+
+[ext_resource type="Texture2D" uid="uid://c0mhkdl5x0jy3" path="res://Assets/Town/Textures/PolygonTown_Road_01.png" id="1_hmf1j"]
+
+[resource]
+albedo_texture = ExtResource("1_hmf1j")

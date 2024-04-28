@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://5jhsh57t0gmt"
+path="res://.godot/imported/SM_Bld_House_Deck_Roof_InnerCorner_01.obj-7830abbfa398e0d2c14c1711ce852f4c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Deck_Roof_InnerCorner_01.obj-7830abbfa398e0d2c14c1711ce852f4c.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Deck_Roof_InnerCorner_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Deck_Roof_InnerCorner_01.obj-7830abbfa398e0d2c14c1711ce852f4c.mesh", "res://.godot/imported/SM_Bld_House_Deck_Roof_InnerCorner_01.obj-7830abbfa398e0d2c14c1711ce852f4c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

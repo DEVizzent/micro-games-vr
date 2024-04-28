@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crwcmlrg2f4ai"
+path="res://.godot/imported/SM_Prop_Computer_Mouse_01.obj-99e73fae389504252b8bbd46140f55e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Computer_Mouse_01.obj-99e73fae389504252b8bbd46140f55e9.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Computer_Mouse_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Computer_Mouse_01.obj-99e73fae389504252b8bbd46140f55e9.mesh", "res://.godot/imported/SM_Prop_Computer_Mouse_01.obj-99e73fae389504252b8bbd46140f55e9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

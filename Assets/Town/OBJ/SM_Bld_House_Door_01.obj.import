@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bumchqh87evjs"
+path="res://.godot/imported/SM_Bld_House_Door_01.obj-70322a94a3289b87e4e57ecb5a57dd82.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Door_01.obj-70322a94a3289b87e4e57ecb5a57dd82.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Door_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Door_01.obj-70322a94a3289b87e4e57ecb5a57dd82.mesh", "res://.godot/imported/SM_Bld_House_Door_01.obj-70322a94a3289b87e4e57ecb5a57dd82.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

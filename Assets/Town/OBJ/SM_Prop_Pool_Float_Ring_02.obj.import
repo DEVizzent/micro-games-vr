@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3xhtts2yv7rl"
+path="res://.godot/imported/SM_Prop_Pool_Float_Ring_02.obj-c0f7d26ef6923a08e10040a8da1814df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Pool_Float_Ring_02.obj-c0f7d26ef6923a08e10040a8da1814df.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Pool_Float_Ring_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Pool_Float_Ring_02.obj-c0f7d26ef6923a08e10040a8da1814df.mesh", "res://.godot/imported/SM_Prop_Pool_Float_Ring_02.obj-c0f7d26ef6923a08e10040a8da1814df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

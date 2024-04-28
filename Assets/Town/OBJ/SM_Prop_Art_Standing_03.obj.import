@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bjrb4pb2c7ckg"
+path="res://.godot/imported/SM_Prop_Art_Standing_03.obj-95dc780d20a1b3c5f0ddf96fee89c2c9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Art_Standing_03.obj-95dc780d20a1b3c5f0ddf96fee89c2c9.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Art_Standing_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_Art_Standing_03.obj-95dc780d20a1b3c5f0ddf96fee89c2c9.mesh", "res://.godot/imported/SM_Prop_Art_Standing_03.obj-95dc780d20a1b3c5f0ddf96fee89c2c9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

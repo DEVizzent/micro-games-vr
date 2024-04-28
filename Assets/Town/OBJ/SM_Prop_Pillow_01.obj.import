@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3y3av0er57n6"
+path="res://.godot/imported/SM_Prop_Pillow_01.obj-2fb0682d364ea45cee91338b4a7e476d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Pillow_01.obj-2fb0682d364ea45cee91338b4a7e476d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Pillow_01.obj"
+dest_files=["res://.godot/imported/SM_Prop_Pillow_01.obj-2fb0682d364ea45cee91338b4a7e476d.mesh", "res://.godot/imported/SM_Prop_Pillow_01.obj-2fb0682d364ea45cee91338b4a7e476d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

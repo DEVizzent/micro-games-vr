@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b50hnf3ivj2hl"
+path="res://.godot/imported/SM_Env_Grass_Edge_02.obj-e5db9c692129e3f3fb1691f26ca9a9e0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Grass_Edge_02.obj-e5db9c692129e3f3fb1691f26ca9a9e0.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Env_Grass_Edge_02.obj"
+dest_files=["res://.godot/imported/SM_Env_Grass_Edge_02.obj-e5db9c692129e3f3fb1691f26ca9a9e0.mesh", "res://.godot/imported/SM_Env_Grass_Edge_02.obj-e5db9c692129e3f3fb1691f26ca9a9e0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

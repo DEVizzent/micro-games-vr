@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bdp611wkegkib"
+path="res://.godot/imported/SM_Bld_House_DeckRail_01.obj-6dc61a4d47c2b9b87b0b47e3ee17e73e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_DeckRail_01.obj-6dc61a4d47c2b9b87b0b47e3ee17e73e.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_DeckRail_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_DeckRail_01.obj-6dc61a4d47c2b9b87b0b47e3ee17e73e.mesh", "res://.godot/imported/SM_Bld_House_DeckRail_01.obj-6dc61a4d47c2b9b87b0b47e3ee17e73e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

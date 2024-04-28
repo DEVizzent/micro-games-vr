@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dojylgt4mutqx"
+path="res://.godot/imported/SM_Prop_Pot_04.obj-2d00d7090d8296d571dde40465cf2892.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Pot_04.obj-2d00d7090d8296d571dde40465cf2892.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Pot_04.obj"
+dest_files=["res://.godot/imported/SM_Prop_Pot_04.obj-2d00d7090d8296d571dde40465cf2892.mesh", "res://.godot/imported/SM_Prop_Pot_04.obj-2d00d7090d8296d571dde40465cf2892.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

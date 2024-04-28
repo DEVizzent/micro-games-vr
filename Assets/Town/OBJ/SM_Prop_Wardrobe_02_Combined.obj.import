@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ovjf5y2dsuyo"
+path="res://.godot/imported/SM_Prop_Wardrobe_02_Combined.obj-c45e8cd56afa522068f5767e35a0668f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Wardrobe_02_Combined.obj-c45e8cd56afa522068f5767e35a0668f.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Wardrobe_02_Combined.obj"
+dest_files=["res://.godot/imported/SM_Prop_Wardrobe_02_Combined.obj-c45e8cd56afa522068f5767e35a0668f.mesh", "res://.godot/imported/SM_Prop_Wardrobe_02_Combined.obj-c45e8cd56afa522068f5767e35a0668f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://beqrhaj4d1y5t"
+path="res://.godot/imported/SM_Generic_Ground_03.obj-9a8a7c74ea08e3633a2d1a3f714647ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Generic_Ground_03.obj-9a8a7c74ea08e3633a2d1a3f714647ba.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Generic_Ground_03.obj"
+dest_files=["res://.godot/imported/SM_Generic_Ground_03.obj-9a8a7c74ea08e3633a2d1a3f714647ba.mesh", "res://.godot/imported/SM_Generic_Ground_03.obj-9a8a7c74ea08e3633a2d1a3f714647ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

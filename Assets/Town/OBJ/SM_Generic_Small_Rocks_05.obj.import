@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c135j6unvu4uy"
+path="res://.godot/imported/SM_Generic_Small_Rocks_05.obj-79c7f4c7d8aaa1cb275cefa555e767e6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Generic_Small_Rocks_05.obj-79c7f4c7d8aaa1cb275cefa555e767e6.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Generic_Small_Rocks_05.obj"
+dest_files=["res://.godot/imported/SM_Generic_Small_Rocks_05.obj-79c7f4c7d8aaa1cb275cefa555e767e6.mesh", "res://.godot/imported/SM_Generic_Small_Rocks_05.obj-79c7f4c7d8aaa1cb275cefa555e767e6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

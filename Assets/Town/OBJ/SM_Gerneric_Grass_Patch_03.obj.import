@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpmfkscsbhvgg"
+path="res://.godot/imported/SM_Gerneric_Grass_Patch_03.obj-abc1ed8cb37d0ff8b0fe255798bcf583.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Gerneric_Grass_Patch_03.obj-abc1ed8cb37d0ff8b0fe255798bcf583.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Gerneric_Grass_Patch_03.obj"
+dest_files=["res://.godot/imported/SM_Gerneric_Grass_Patch_03.obj-abc1ed8cb37d0ff8b0fe255798bcf583.mesh", "res://.godot/imported/SM_Gerneric_Grass_Patch_03.obj-abc1ed8cb37d0ff8b0fe255798bcf583.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

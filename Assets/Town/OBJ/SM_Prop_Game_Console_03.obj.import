@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brbw71ertkiv6"
+path="res://.godot/imported/SM_Prop_Game_Console_03.obj-f3590ce5aaed5e587ff56812794bc3df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Game_Console_03.obj-f3590ce5aaed5e587ff56812794bc3df.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Game_Console_03.obj"
+dest_files=["res://.godot/imported/SM_Prop_Game_Console_03.obj-f3590ce5aaed5e587ff56812794bc3df.mesh", "res://.godot/imported/SM_Prop_Game_Console_03.obj-f3590ce5aaed5e587ff56812794bc3df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

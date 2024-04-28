@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dam7o08qw8b7g"
+path="res://.godot/imported/SM_Item_Saw_01.obj-04b42704ff709cf5f6052b52a303cdb5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_Saw_01.obj-04b42704ff709cf5f6052b52a303cdb5.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_Saw_01.obj"
+dest_files=["res://.godot/imported/SM_Item_Saw_01.obj-04b42704ff709cf5f6052b52a303cdb5.mesh", "res://.godot/imported/SM_Item_Saw_01.obj-04b42704ff709cf5f6052b52a303cdb5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

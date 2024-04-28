@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://by7waqldaf4r5"
+path="res://.godot/imported/SM_Bld_House_Roof_End_01.obj-b5b7e949d1ea0389a0da04b4a0a29d1d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Roof_End_01.obj-b5b7e949d1ea0389a0da04b4a0a29d1d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Roof_End_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Roof_End_01.obj-b5b7e949d1ea0389a0da04b4a0a29d1d.mesh", "res://.godot/imported/SM_Bld_House_Roof_End_01.obj-b5b7e949d1ea0389a0da04b4a0a29d1d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4d18qmcx61je"
+path="res://.godot/imported/SM_Bld_House_InternalWall_Garage_Door_01.obj-5d9f89ef029d5e227388b8c369421a8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_InternalWall_Garage_Door_01.obj-5d9f89ef029d5e227388b8c369421a8c.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_InternalWall_Garage_Door_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_InternalWall_Garage_Door_01.obj-5d9f89ef029d5e227388b8c369421a8c.mesh", "res://.godot/imported/SM_Bld_House_InternalWall_Garage_Door_01.obj-5d9f89ef029d5e227388b8c369421a8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

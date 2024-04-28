@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://mdnr4ynn6q11"
+path="res://.godot/imported/SM_Bld_House_Roof_Angled_Cap_Short_01.obj-e077aeac7ba58cfdaddbbd2b867a15f8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Bld_House_Roof_Angled_Cap_Short_01.obj-e077aeac7ba58cfdaddbbd2b867a15f8.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Bld_House_Roof_Angled_Cap_Short_01.obj"
+dest_files=["res://.godot/imported/SM_Bld_House_Roof_Angled_Cap_Short_01.obj-e077aeac7ba58cfdaddbbd2b867a15f8.mesh", "res://.godot/imported/SM_Bld_House_Roof_Angled_Cap_Short_01.obj-e077aeac7ba58cfdaddbbd2b867a15f8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c08r74ln3nlhr"
+path="res://.godot/imported/SM_Item_Mallet_02.obj-a3e1e1f976fae90b425385682c85d38f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_Mallet_02.obj-a3e1e1f976fae90b425385682c85d38f.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_Mallet_02.obj"
+dest_files=["res://.godot/imported/SM_Item_Mallet_02.obj-a3e1e1f976fae90b425385682c85d38f.mesh", "res://.godot/imported/SM_Item_Mallet_02.obj-a3e1e1f976fae90b425385682c85d38f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

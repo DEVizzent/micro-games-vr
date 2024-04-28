@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4li63wo4ad0q"
+path="res://.godot/imported/SM_Env_Sidewalk_Corner_End_01.obj-627d71146cdcafaca78c1e23d06fc7b6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Sidewalk_Corner_End_01.obj-627d71146cdcafaca78c1e23d06fc7b6.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Env_Sidewalk_Corner_End_01.obj"
+dest_files=["res://.godot/imported/SM_Env_Sidewalk_Corner_End_01.obj-627d71146cdcafaca78c1e23d06fc7b6.mesh", "res://.godot/imported/SM_Env_Sidewalk_Corner_End_01.obj-627d71146cdcafaca78c1e23d06fc7b6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

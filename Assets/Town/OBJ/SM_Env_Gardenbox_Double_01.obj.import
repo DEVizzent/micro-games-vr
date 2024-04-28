@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b30ybuc4gy5mu"
+path="res://.godot/imported/SM_Env_Gardenbox_Double_01.obj-6ab0b749bff506ec98da6a5b2d5338d1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Gardenbox_Double_01.obj-6ab0b749bff506ec98da6a5b2d5338d1.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Env_Gardenbox_Double_01.obj"
+dest_files=["res://.godot/imported/SM_Env_Gardenbox_Double_01.obj-6ab0b749bff506ec98da6a5b2d5338d1.mesh", "res://.godot/imported/SM_Env_Gardenbox_Double_01.obj-6ab0b749bff506ec98da6a5b2d5338d1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

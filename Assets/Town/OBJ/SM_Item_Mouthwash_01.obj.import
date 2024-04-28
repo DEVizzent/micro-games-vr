@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://j2tanm686ns"
+path="res://.godot/imported/SM_Item_Mouthwash_01.obj-a8b33bef94c425e5ed5955311e9e472d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_Mouthwash_01.obj-a8b33bef94c425e5ed5955311e9e472d.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_Mouthwash_01.obj"
+dest_files=["res://.godot/imported/SM_Item_Mouthwash_01.obj-a8b33bef94c425e5ed5955311e9e472d.mesh", "res://.godot/imported/SM_Item_Mouthwash_01.obj-a8b33bef94c425e5ed5955311e9e472d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

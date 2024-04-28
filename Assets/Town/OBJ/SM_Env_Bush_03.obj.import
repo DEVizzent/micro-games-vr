@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f8w4klipn3dn"
+path="res://.godot/imported/SM_Env_Bush_03.obj-0a13ccba762e5b1ba23632b8306c3aa0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Env_Bush_03.obj-0a13ccba762e5b1ba23632b8306c3aa0.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Env_Bush_03.obj"
+dest_files=["res://.godot/imported/SM_Env_Bush_03.obj-0a13ccba762e5b1ba23632b8306c3aa0.mesh", "res://.godot/imported/SM_Env_Bush_03.obj-0a13ccba762e5b1ba23632b8306c3aa0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

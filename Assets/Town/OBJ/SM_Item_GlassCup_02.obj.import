@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5bma3u6u65at"
+path="res://.godot/imported/SM_Item_GlassCup_02.obj-e2cacac20238bcbe20b99bec9e390228.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Item_GlassCup_02.obj-e2cacac20238bcbe20b99bec9e390228.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Item_GlassCup_02.obj"
+dest_files=["res://.godot/imported/SM_Item_GlassCup_02.obj-e2cacac20238bcbe20b99bec9e390228.mesh", "res://.godot/imported/SM_Item_GlassCup_02.obj-e2cacac20238bcbe20b99bec9e390228.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

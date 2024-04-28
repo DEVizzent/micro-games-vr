@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqbytiehmbk6a"
+path="res://.godot/imported/SM_Prop_Bed_Double_02.obj-5274b191dedde2505c0b22294bd41759.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Prop_Bed_Double_02.obj-5274b191dedde2505c0b22294bd41759.mesh"]
+
+source_file="res://Assets/Town/OBJ/SM_Prop_Bed_Double_02.obj"
+dest_files=["res://.godot/imported/SM_Prop_Bed_Double_02.obj-5274b191dedde2505c0b22294bd41759.mesh", "res://.godot/imported/SM_Prop_Bed_Double_02.obj-5274b191dedde2505c0b22294bd41759.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
