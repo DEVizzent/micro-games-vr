@@ -8,7 +8,7 @@
 
 [node name="Platformer" instance=ExtResource("1_3koar")]
 
-[node name="World" parent="." index="7"]
+[node name="World" parent="." index="8"]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 1.63735, 1.31941, 0)
 
 [node name="Player" parent="World" index="0"]
@@ -35,20 +35,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4322, -1.321, 4.80119)
 [node name="platform4" parent="World" index="7" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, -1.379, 6.71482)
 
-[node name="platform-falling" parent="World" index="9" instance=ExtResource("5_b0g0h")]
+[node name="platform-falling" parent="World" index="8" instance=ExtResource("5_b0g0h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29317, -1.379, -1.05552)
 
-[node name="platform-falling2" parent="World" index="10" instance=ExtResource("5_b0g0h")]
+[node name="platform-falling2" parent="World" index="9" instance=ExtResource("5_b0g0h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29317, -1.379, 0.995298)
 
-[node name="coin3" parent="World" index="11" instance=ExtResource("3_ch5rx")]
+[node name="coin3" parent="World" index="10" instance=ExtResource("3_ch5rx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4567, -0.123432, 4.45039)
 
-[node name="platform5" parent="World" index="12" instance=ExtResource("2_g2hqj")]
+[node name="platform5" parent="World" index="11" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(0.000663176, 0, -1, 0, 1, 0, 1, 0, 0.000663176, 8.25241, -1.379, 4.74959)
 
-[node name="coin4" parent="World" index="13" instance=ExtResource("3_ch5rx")]
+[node name="coin4" parent="World" index="12" instance=ExtResource("3_ch5rx")]
 transform = Transform3D(0.000663176, 0, -1, 0, 1, 0, 1, 0, 0.000663176, 7.62824, -0.123432, 4.77449)
 
-[node name="platform6" parent="World" index="14" instance=ExtResource("2_g2hqj")]
+[node name="platform6" parent="World" index="13" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(0.000663176, 0, -1, 0, 1, 0, 1, 0, 0.000663176, 6.24841, -1.379, 4.75089)

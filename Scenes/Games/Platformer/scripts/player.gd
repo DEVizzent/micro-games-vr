@@ -16,6 +16,7 @@ signal coin_collected
 @export var jump_strength = 4
 
 var _origin_position: Vector3
+var _origin_rotation_y: float
 var movement_velocity: Vector3
 var rotation_direction: float
 var gravity = 0
@@ -40,6 +41,7 @@ var coins = 0
 
 func _ready():
 	_origin_position = position
+	_origin_rotation_y = _camera.global_rotation.y
 	
 # Functions
 
@@ -114,7 +116,7 @@ func handle_controls(delta):
 	input.x = dz_input_action.y
 	input.z = dz_input_action.x
 
-	input = input.rotated(Vector3.UP, _camera.rotation.y).normalized()
+	input = input.rotated(Vector3.UP, (_camera.global_rotation.y - _origin_rotation_y)).normalized()
 	
 	movement_velocity = input * movement_speed * delta
 	

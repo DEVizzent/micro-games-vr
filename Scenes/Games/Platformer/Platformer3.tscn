@@ -31,8 +31,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19342, 2.50157, 6.45702)
 [node name="platform4" parent="World" index="7" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -0.640594, 1.3917)
 
-[node name="platform5" parent="World" index="9" instance=ExtResource("2_g2hqj")]
+[node name="platform5" parent="World" index="8" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -2.88289)
 
-[node name="platform6" parent="World" index="10" instance=ExtResource("2_g2hqj")]
+[node name="platform6" parent="World" index="9" instance=ExtResource("2_g2hqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, -5.06359, -0.846216)
