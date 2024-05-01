@@ -41,6 +41,8 @@ target_position = Vector3(0, -10, 0)
 collision_mask = 16384
 collide_with_areas = true
 collide_with_bodies = false
+debug_shape_custom_color = Color(1, 0, 0, 1)
+debug_shape_thickness = 1
 
 [node name="GrabPointHandRight" parent="." index="2" instance=ExtResource("3_qp2j7")]
 transform = Transform3D(-0.997454, 0.0713059, -8.72002e-08, 0.0713059, 0.997454, 6.23376e-09, 8.74228e-08, 0, -1, 0.0112793, 0.00992006, -0.000828221)
@@ -55,3 +57,5 @@ stream = ExtResource("10_npw3q")
 bus = &"Effects"
 
 [connection signal="action_pressed" from="." to="blasterC2" method="_on_activation"]
+[connection signal="picked_up" from="." to="blasterC2" method="_on_pickable_object_picked_up"]
+[connection signal="released" from="." to="blasterC2" method="_on_pickable_object_released"]
