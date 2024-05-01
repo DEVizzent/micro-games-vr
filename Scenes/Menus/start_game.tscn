@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bjkqp2ssset2q"]
+[gd_scene load_steps=15 format=3 uid="uid://bjkqp2ssset2q"]
 
 [ext_resource type="PackedScene" uid="uid://qbmx03iibuuu" path="res://addons/godot-xr-tools/staging/scene_base.tscn" id="1_li54i"]
 [ext_resource type="PackedScene" uid="uid://bdwmserhqai5h" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_physics_hand_low.tscn" id="3_1qgmp"]
@@ -6,35 +6,24 @@
 [ext_resource type="PackedScene" uid="uid://btf05hjpw6k05" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_physics_hand_low.tscn" id="5_dcme0"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="6_x78w1"]
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="7_v1iht"]
-[ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_blocks.gd" id="8_x7t8k"]
-[ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="9_40dgh"]
-[ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="10_vw16v"]
-[ext_resource type="Material" uid="uid://dy1gycg8iyi21" path="res://Materials/PavingStone/PavingStone.tres" id="11_kwfdx"]
+[ext_resource type="Texture2D" uid="uid://dpyend2ro20py" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Color.jpg" id="8_p83k5"]
+[ext_resource type="Texture2D" uid="uid://bdfapqva83tkp" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_NormalGL.jpg" id="9_ik65q"]
+[ext_resource type="Texture2D" uid="uid://vtkgaleg6oh6" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Roughness.jpg" id="10_rdbcl"]
+[ext_resource type="PackedScene" uid="uid://rm8xdrwvchi4" path="res://Assets/Town/fullTown.tscn" id="11_uoiia"]
 [ext_resource type="PackedScene" uid="uid://cg32pgwu6ja5f" path="res://Scenes/Menus/Start/start_panel.tscn" id="12_aspem"]
 
-[sub_resource type="Resource" id="Resource_7q75j"]
-script = ExtResource("10_vw16v")
-selected = false
-active = false
-collsion = true
-physics_layer = 0
-physics_mask = 0
-vertex_points = PackedVector3Array(0, 1, 4, 0, 1, -4, 9, 1, -4, 9, 1, 4, 9, 0, -4, 9, 0, 4, 0, 0, 4, 0, 0, -4)
-vertex_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0)
-active_vertex = -1
-edge_vertex_indices = PackedInt32Array(0, 1, 1, 2, 2, 3, 3, 0, 4, 5, 5, 3, 2, 4, 5, 6, 6, 0, 4, 7, 7, 6, 7, 1)
-edge_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-active_edge = -1
-edge_face_indices = PackedInt32Array(0, 4, 0, 5, 0, 1, 0, 2, 1, 3, 1, 2, 1, 5, 2, 3, 2, 4, 3, 5, 3, 4, 4, 5)
-face_vertex_count = PackedInt32Array(4, 4, 4, 4, 4, 4)
-face_vertex_indices = PackedInt32Array(0, 1, 2, 3, 4, 5, 3, 2, 0, 3, 5, 6, 4, 7, 6, 5, 0, 6, 7, 1, 4, 2, 1, 7)
-face_material_indices = PackedInt32Array(0, 0, 0, 0, 0, 0)
-face_uv_transform = Array[Transform2D]([Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0), Transform2D(1, 0, 0, 1, 0, 0)])
-face_visible = PackedByteArray(1, 1, 1, 1, 1, 1)
-face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-face_selected = PackedByteArray(1, 0, 0, 0, 0, 0)
-active_face = 0
-face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
+[sub_resource type="BoxShape3D" id="BoxShape3D_xrw8p"]
+size = Vector3(100, 1, 100)
+
+[sub_resource type="QuadMesh" id="QuadMesh_cvwcy"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_55paa"]
+albedo_texture = ExtResource("8_p83k5")
+roughness_texture = ExtResource("10_rdbcl")
+normal_enabled = true
+normal_texture = ExtResource("9_ik65q")
+uv1_triplanar = true
 
 [node name="BaseGameScene" instance=ExtResource("1_li54i")]
 
@@ -54,21 +43,25 @@ enabled = false
 
 [node name="PlayerBody" parent="XROrigin3D" index="3" instance=ExtResource("7_v1iht")]
 
-[node name="CyclopsBlocks" type="Node3D" parent="." index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-script = ExtResource("8_x7t8k")
-
-[node name="Block_1" type="Node3D" parent="CyclopsBlocks" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2)
-script = ExtResource("9_40dgh")
-block_data = SubResource("Resource_7q75j")
-materials = Array[Material]([ExtResource("11_kwfdx")])
-metadata/_edit_lock_ = true
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="2"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 0.670453, 0.741952, 0, -0.741952, 0.670453, 0, 0, 0)
 
-[node name="StartPanel" parent="." index="3" instance=ExtResource("12_aspem")]
+[node name="StartPanel" parent="." index="2" instance=ExtResource("12_aspem")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.592465, 1.0836, -3.38982)
-transparent = 0
 unshaded = true
+
+[node name="Floor" type="StaticBody3D" parent="." index="3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_xrw8p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" index="1"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+visible = false
+mesh = SubResource("QuadMesh_cvwcy")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_55paa")
+
+[node name="Root Scene" parent="." index="4" instance=ExtResource("11_uoiia")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30, 0, -4)

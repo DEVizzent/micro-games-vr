@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://u0m22c27kypk"]
+[gd_scene load_steps=11 format=3 uid="uid://u0m22c27kypk"]
 
 [ext_resource type="Script" path="res://Scenes/Title/Splash.gd" id="1_a1yxl"]
 [ext_resource type="Shader" path="res://addons/godot-xr-tools/staging/fade.gdshader" id="2_afo5v"]
@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://bqumugyvkct4r" path="res://addons/godot-xr-tools/staging/loading_screen.tscn" id="3_e1eyv"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="5_h7ike"]
 [ext_resource type="Texture2D" uid="uid://cbsx7x2p5b6wt" path="res://DevizzentGodotSplash.png" id="5_v8t78"]
+[ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://Scenes/Games/Platformer/scenes/main-environment.tres" id="7_n3s28"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4acs"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_am4pp"]
+material = SubResource("StandardMaterial3D_n4acs")
 custom_aabb = AABB(-5000, -5000, -5000, 10000, 10000, 10000)
 size = Vector2(2, 2)
 
@@ -42,3 +46,6 @@ splash_screen = ExtResource("5_v8t78")
 [node name="StartXR" parent="." instance=ExtResource("5_h7ike")]
 
 [node name="Scene" type="Node3D" parent="." groups=["CurrentSceneContainer"]]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("7_n3s28")

@@ -23,11 +23,11 @@ ambient_light_sky_contribution = 0.8
 ambient_light_energy = 5.0
 reflected_light_source = 2
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cnxf1"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0du4"]
 albedo_texture = ExtResource("3_psvdj")
 
 [sub_resource type="QuadMesh" id="QuadMesh_o4fpj"]
-material = SubResource("StandardMaterial3D_cnxf1")
+material = SubResource("StandardMaterial3D_d0du4")
 size = Vector2(2, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5wh7x"]
