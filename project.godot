@@ -13,6 +13,7 @@ config_version=5
 config/name="TestVR"
 run/main_scene="res://Scenes/Title/Splash.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.666667, 0.666667, 0.666667, 1)
 boot_splash/image="res://icon.svg"
 config/icon="res://icon.svg"
 
@@ -55,6 +56,10 @@ enabled=PackedStringArray("res://addons/FirebaseAnalyticsGodotPlugin/plugin.cfg"
 3d_physics/layer_21="Pointable "
 3d_physics/layer_22="Hand Pose Area"
 3d_physics/layer_23="UI Objects"
+
+[physics]
+
+3d/run_on_separate_thread=true
 
 [rendering]
 

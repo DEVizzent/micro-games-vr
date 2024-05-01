@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://j0f6vctqulvw"]
 
-[ext_resource type="PackedScene" uid="uid://nl6ravgt2db2" path="res://Scenes/Games/Shoot/base_shoot.tscn" id="1_v0tco"]
+[ext_resource type="PackedScene" uid="uid://d2ult2t1mfth8" path="res://Scenes/Games/Shoot/shoot.tscn" id="1_85138"]
 [ext_resource type="PackedScene" uid="uid://yqgn73ucy4ti" path="res://Scenes/Elements/Shoot/target.tscn" id="2_a60w1"]
 
-[node name="Shoot1" instance=ExtResource("1_v0tco")]
+[node name="shoot1" instance=ExtResource("1_85138")]
 
-[node name="Target" parent="." index="8" instance=ExtResource("2_a60w1")]
+[node name="Target" parent="." index="11" instance=ExtResource("2_a60w1")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0)

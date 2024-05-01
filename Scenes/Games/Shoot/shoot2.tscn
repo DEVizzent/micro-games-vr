@@ -1,15 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://njcnp4dbralr"]
 
-[ext_resource type="PackedScene" uid="uid://nl6ravgt2db2" path="res://Scenes/Games/Shoot/base_shoot.tscn" id="1_d64um"]
+[ext_resource type="PackedScene" uid="uid://d2ult2t1mfth8" path="res://Scenes/Games/Shoot/shoot.tscn" id="1_03iwa"]
 [ext_resource type="PackedScene" uid="uid://yqgn73ucy4ti" path="res://Scenes/Elements/Shoot/target.tscn" id="2_c0vvm"]
 
-[node name="Shoot2" instance=ExtResource("1_d64um")]
+[node name="shoot2" instance=ExtResource("1_03iwa")]
 
-[node name="Target" parent="." index="8" instance=ExtResource("2_c0vvm")]
+[node name="SM_Prop_Outdoor_Table_01_1020" parent="Table" index="0"]
+surface_material_override/0 = null
+
+[node name="Target" parent="." index="11" instance=ExtResource("2_c0vvm")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0)
 
-[node name="Target2" parent="." index="9" instance=ExtResource("2_c0vvm")]
+[node name="Target2" parent="." index="12" instance=ExtResource("2_c0vvm")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, 0.867851)
 
-[node name="Target3" parent="." index="10" instance=ExtResource("2_c0vvm")]
+[node name="Target3" parent="." index="13" instance=ExtResource("2_c0vvm")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.03933, 1.5422, -0.949555)
