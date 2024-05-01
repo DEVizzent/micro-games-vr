@@ -8,6 +8,7 @@ const EASY_GAMES: Array[String] = [
 	"res://Scenes/Games/Shoot/shoot1.tscn",
 	"res://Scenes/Games/Search/search1.tscn",
 	"res://Scenes/Games/Spiderman/spiderman1.tscn",
+	"res://Scenes/Games/Platformer/Platformer1.tscn",
 ]
 const MEDIUM_GAMES: Array[String] = [
 	"res://Scenes/Games/Kitchen/kitchen2.tscn",
@@ -15,6 +16,7 @@ const MEDIUM_GAMES: Array[String] = [
 	"res://Scenes/Games/Shoot/shoot2.tscn",
 	"res://Scenes/Games/Search/search2.tscn",
 	"res://Scenes/Games/Spiderman/spiderman2.tscn",
+	"res://Scenes/Games/Platformer/Platformer2.tscn",
 ]
 const HARD_GAMES: Array[String] = [
 	"res://Scenes/Games/Kitchen/kitchen2.tscn",
@@ -22,16 +24,19 @@ const HARD_GAMES: Array[String] = [
 	"res://Scenes/Games/Shoot/shoot3.tscn",
 	"res://Scenes/Games/Search/search3.tscn",
 	"res://Scenes/Games/Spiderman/spiderman3.tscn",
+	"res://Scenes/Games/Platformer/Platformer3.tscn",
 ]
 const ENDLESS_GAMES: Array[String]  = [
 	"res://Scenes/Games/Shoot/shoot3.tscn",
 	"res://Scenes/Games/Basket/basket3.tscn",
 	"res://Scenes/Games/Kitchen/kitchen2.tscn",
 	"res://Scenes/Games/Spiderman/spiderman3.tscn",
+	"res://Scenes/Games/Platformer/Platformer4.tscn",
 ]
 
 var test: Array[String] = [
-	# "res://Scenes/Games/Spiderman/spiderman1.tscn",
+	#  "res://Scenes/Games/Test/Test.tscn",
+	#  "res://Scenes/Games/Test/Test.tscn",
 	# "res://Scenes/Games/Spiderman/spiderman2.tscn",
 	# "res://Scenes/Games/Spiderman/spiderman3.tscn",
 ]
