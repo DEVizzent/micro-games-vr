@@ -8875,12 +8875,14 @@ surface_material_override/0 = ExtResource("2_i3omt")
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Prop_Computer_Keyboard_01_1151" parent="RootNode" index="2776"]
+transform = Transform3D(-0.987477, -0.157761, 0, 0, 0, 1, -0.157761, 0.987477, 0, -5.10556, 4.39364, -13.1477)
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Prop_Lamp_03_1154" parent="RootNode" index="2777"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Prop_BookOpen_01_1157" parent="RootNode" index="2778"]
+visible = false
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Prop_Book_Group_1160" parent="RootNode" index="2779"]
@@ -8890,6 +8892,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Prop_DeskChair_01_1166" parent="RootNode" index="2781"]
+transform = Transform3D(0.585637, 0.810573, 0, 0, 0, 1, 0.810573, -0.585637, 0, -4.03747, 3.5, -14.2504)
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_Blinds_01_1173" parent="RootNode" index="2782"]

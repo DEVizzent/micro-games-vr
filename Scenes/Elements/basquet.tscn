@@ -1,23 +1,23 @@
 [gd_scene load_steps=4 format=3 uid="uid://7i4pqdbhssmn"]
 
-[ext_resource type="PackedScene" uid="uid://ccpf41761nwh4" path="res://Assets/Recycle_Trash_Bin.glb" id="1_btahp"]
 [ext_resource type="Script" path="res://Scenes/Elements/basquet.gd" id="1_xancu"]
+[ext_resource type="PackedScene" uid="uid://bsheftxb56un3" path="res://Scenes/Elements/Basket/Bin.tscn" id="2_w37x3"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7mwyg"]
-size = Vector3(0.442627, 0.3, 0.35415)
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gx7hc"]
+height = 0.25
+radius = 0.15
 
-[node name="Basquet" type="Node3D"]
+[node name="BasquetBin" type="Node3D"]
 script = ExtResource("1_xancu")
 
-[node name="Recycle_Trash_Bin" parent="." instance=ExtResource("1_btahp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.557263, 0, -0.160774)
+[node name="Bin" parent="." instance=ExtResource("2_w37x3")]
 
 [node name="Area3D" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00850499, 0.152091, -0.0370831)
-collision_mask = 64
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.221392, 0)
+collision_mask = 68
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0235596, 0, -0.000805676)
-shape = SubResource("BoxShape3D_7mwyg")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00747782, -0.079886, -0.00910366)
+shape = SubResource("CylinderShape3D_gx7hc")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

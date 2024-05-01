@@ -1,22 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://hx1jbmp5l1n0"]
+[gd_scene load_steps=2 format=3 uid="uid://hx1jbmp5l1n0"]
 
-[ext_resource type="PackedScene" uid="uid://ctyj100iuwwic" path="res://Scenes/Games/Basket/basket1.tscn" id="1_wcmfr"]
-[ext_resource type="PackedScene" uid="uid://bdwmserhqai5h" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_physics_hand_low.tscn" id="2_32hp8"]
-[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_gn1a5"]
-[ext_resource type="PackedScene" uid="uid://btf05hjpw6k05" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_physics_hand_low.tscn" id="4_jgisu"]
+[ext_resource type="PackedScene" uid="uid://y12xmdpaev1t" path="res://Scenes/Games/Basket/basket.tscn" id="1_4ydcg"]
 
-[node name="Basket2" instance=ExtResource("1_wcmfr")]
+[node name="BaseGameScene2" instance=ExtResource("1_4ydcg")]
 
-[node name="LeftPhysicsHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_32hp8")]
-
-[node name="FunctionPickup2" parent="XROrigin3D/LeftHand" index="1" instance=ExtResource("3_gn1a5")]
-
-[node name="RightPhysicsHand" parent="XROrigin3D/RightHand" index="0" instance=ExtResource("4_jgisu")]
-
-[node name="FunctionPickup2" parent="XROrigin3D/RightHand" index="2" instance=ExtResource("3_gn1a5")]
-
-[node name="PlayerBody" parent="XROrigin3D" index="3"]
-collision_mask = 1023
-
-[node name="Basquet" parent="." index="9"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.593675, 0, -2.84694)
+[node name="BasquetBin" parent="." index="12"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.93292, 0, 0.347679)

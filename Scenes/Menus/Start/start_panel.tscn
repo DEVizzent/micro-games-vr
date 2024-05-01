@@ -12,7 +12,7 @@ size = Vector2(3, 2)
 [sub_resource type="ViewportTexture" id="ViewportTexture_4xbs1"]
 viewport_path = NodePath("Viewport")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5eg5a"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71w7t"]
 transparency = 1
 cull_mode = 2
 albedo_texture = SubResource("ViewportTexture_4xbs1")
@@ -29,7 +29,7 @@ theme = SubResource("Theme_ovdjh")
 
 [node name="Screen" parent="." index="1"]
 mesh = SubResource("QuadMesh_ufcdl")
-surface_material_override/0 = SubResource("StandardMaterial3D_5eg5a")
+surface_material_override/0 = SubResource("StandardMaterial3D_71w7t")
 
 [node name="CollisionShape3D" parent="StaticBody3D" index="0"]
 shape = SubResource("BoxShape3D_k8etd")
