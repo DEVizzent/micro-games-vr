@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://rm8xdrwvchi4"]
+[gd_scene load_steps=5 format=3 uid="uid://rm8xdrwvchi4"]
 
 [ext_resource type="PackedScene" uid="uid://2wrusifa1lkg" path="res://Assets/Town/POLYGON_Town_Demo.fbx" id="1_gundo"]
 [ext_resource type="Material" uid="uid://dhcii4bca7gp2" path="res://Assets/Town/Material/A.tres" id="2_i3omt"]
 [ext_resource type="Material" uid="uid://dco408qb0opko" path="res://Assets/Town/Material/road.tres" id="3_rcfl4"]
+[ext_resource type="Material" uid="uid://bmne1utfkj0r6" path="res://Assets/Town/Material/windows.tres" id="4_20yia"]
 
 [node name="Root Scene" instance=ExtResource("1_gundo")]
 
@@ -5906,6 +5907,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Garage_Window_01_28" parent="RootNode" index="1950"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Garage_4" parent="RootNode" index="1951"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6053,6 +6055,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_02_129" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_01_126" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_01_132" parent="RootNode" index="1999"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6095,48 +6098,56 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_3" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_146" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_3" parent="RootNode" index="2011"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_4" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_3" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_4" parent="RootNode" index="2012"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_5" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_4" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_5" parent="RootNode" index="2013"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_6" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_5" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_6" parent="RootNode" index="2014"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_7" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_6" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_7" parent="RootNode" index="2015"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_8" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_7" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_8" parent="RootNode" index="2016"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_9" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_8" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_9" parent="RootNode" index="2017"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_10" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_9" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Door_3" parent="RootNode" index="2018"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6296,6 +6307,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_11" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_10" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_InternalWall_Garage_6" parent="RootNode" index="2065"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6317,18 +6329,21 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_12" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_11" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_12" parent="RootNode" index="2070"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_13" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_12" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Window_13" parent="RootNode" index="2071"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_14" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_13" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_22" parent="RootNode" index="2072"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6338,6 +6353,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_16" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_15" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_23" parent="RootNode" index="2074"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6347,6 +6363,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_17" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_16" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_Door_9" parent="RootNode" index="2076"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6359,6 +6376,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_18" parent="RootNode/SM_Bld_House_ExteriorWall_GroundFloor_Window_17" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_GroundFloor_24" parent="RootNode" index="2078"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6638,6 +6656,7 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_19" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_01_404" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_3" parent="RootNode" index="2170"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6647,48 +6666,56 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_20" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_2" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_3" parent="RootNode" index="2172"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_21" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_3" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_4" parent="RootNode" index="2173"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_22" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_4" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_5" parent="RootNode" index="2174"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_23" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_5" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_6" parent="RootNode" index="2175"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_24" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_6" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_7" parent="RootNode" index="2176"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_25" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_7" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_8" parent="RootNode" index="2177"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_26" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_8" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_Window_9" parent="RootNode" index="2178"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Window_27" parent="RootNode/SM_Bld_House_ExteriorWall_UpperFloor_Window_9" index="0"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_ExteriorWall_UpperFloor_4" parent="RootNode" index="2179"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -6893,9 +6920,11 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Roof_Window_2" parent="RootNode" index="2246"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_3" parent="RootNode" index="2247"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_Skylight_01_540" parent="RootNode" index="2248"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -8722,27 +8751,35 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_House_Roof_Window_02_1077" parent="RootNode" index="2751"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_4" parent="RootNode" index="2752"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_1081" parent="RootNode" index="2753"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_6" parent="RootNode" index="2754"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_7" parent="RootNode" index="2755"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_1089" parent="RootNode" index="2756"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_9" parent="RootNode" index="2757"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_House_Roof_Window_10" parent="RootNode" index="2758"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Env_Tree_Tall_16" parent="RootNode" index="2759"]
 surface_material_override/0 = ExtResource("2_i3omt")
@@ -12400,12 +12437,14 @@ surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_Skylight_2483" parent="RootNode" index="3935"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Bld_Skylight_02_2486" parent="RootNode" index="3936"]
 surface_material_override/0 = ExtResource("2_i3omt")
 
 [node name="SM_Bld_Skylight_11" parent="RootNode" index="3937"]
 surface_material_override/0 = ExtResource("2_i3omt")
+surface_material_override/1 = ExtResource("4_20yia")
 
 [node name="SM_Env_FlowerPatch_2490" parent="RootNode" index="3938"]
 surface_material_override/0 = ExtResource("2_i3omt")
