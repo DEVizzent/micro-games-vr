@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://vtkgaleg6oh6" path="res://Assets/City/Texture/Road/Asphalt015_1K-JPG_Roughness.jpg" id="5_j2e08"]
 [ext_resource type="PackedScene" uid="uid://c0ye3nsce4vud" path="res://Assets/City/Scenes/Apartments1.tscn" id="6_xivgm"]
 [ext_resource type="PackedScene" uid="uid://b7ke4s7orkpwg" path="res://Assets/City/Scenes/SwimmingPool.tscn" id="7_ymt4l"]
-[ext_resource type="Script" path="res://Scenes/Games/GoalPlayerZone.gd" id="8_enrgn"]
+[ext_resource type="Script" path="res://Scenes/Games/Spiderman/GoalPlayerZone.gd" id="8_enrgn"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_qmfr4"]
 radius = 5.2
