@@ -35,18 +35,18 @@ face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
 [node name="Button1" instance=ExtResource("1_uceys")]
 
-[node name="XROrigin3D" parent="." index="1"]
+[node name="CyclopsBlocks#Block_0" type="Node3D" parent="." index="1"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, -1)
+script = ExtResource("2_sfjln")
+block_data = SubResource("Resource_80sh4")
+materials = Array[Material]([ExtResource("4_fowm2")])
+
+[node name="XROrigin3D" parent="." index="2"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.645986, 0, 0)
 
 [node name="LeftPhysicsHand" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_qe1md")]
 
 [node name="RightPhysicsHand" parent="XROrigin3D/RightHand" index="1" instance=ExtResource("3_tcyls")]
-
-[node name="Block_0" type="Node3D" parent="CyclopsBlocks" index="1"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 1, -1)
-script = ExtResource("2_sfjln")
-block_data = SubResource("Resource_80sh4")
-materials = Array[Material]([ExtResource("4_fowm2")])
 
 [node name="CommandAudioStream" parent="." index="5"]
 stream = ExtResource("5_jgv63")

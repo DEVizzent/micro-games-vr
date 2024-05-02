@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba0tym2awp26c"]
+
+[ext_resource type="PackedScene" uid="uid://c86y1fmmxo7do" path="res://Scenes/Games/base_game2.tscn" id="1_o81yx"]
+[ext_resource type="PackedScene" uid="uid://rm8xdrwvchi4" path="res://Assets/Town/fullTown.tscn" id="2_6el8q"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="2_jxqwe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wt5cs"]
+size = Vector3(1000, 1, 1000)
+
+[node name="BaseGameScene2" instance=ExtResource("1_o81yx")]
+game_time_modifier = 50.0
+
+[node name="MovementDirect" parent="XROrigin3D/LeftHand" index="0" instance=ExtResource("2_jxqwe")]
+max_speed = 8.0
+
+[node name="MovementTurn" parent="XROrigin3D/RightHand" index="0"]
+enabled = true
+
+[node name="CollisionShape3D" parent="Floor" index="0"]
+shape = SubResource("BoxShape3D_wt5cs")
+
+[node name="MeshInstance3D" parent="Floor" index="1"]
+visible = false
+
+[node name="Root Scene" parent="." index="7" instance=ExtResource("2_6el8q")]
